@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6897F16E9F3766F0B4E939D8 /* Pods_TAAuthFactors_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAAuthFactors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2FE149167FB239E06D06D19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A2FE149167FB239E06D06D19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F0E5DB8C391CE0BE0BC8C563 /* Pods-TAAuthFactors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAAuthFactors_Example.debug.xcconfig"; path = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F5C3899B95BAB0E20BF8F686 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FBC8774E7DF8175FE506F127 /* TAAuthFactors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TAAuthFactors.podspec; path = ../TAAuthFactors.podspec; sourceTree = "<group>"; };
+		F5C3899B95BAB0E20BF8F686 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FBC8774E7DF8175FE506F127 /* TAAuthFactors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TAAuthFactors.podspec; path = ../TAAuthFactors.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				312E11B2A763C65434525F42 /* Pods-TAAuthFactors_Tests.debug.xcconfig */,
 				389CC5B641660521D07E2403 /* Pods-TAAuthFactors_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

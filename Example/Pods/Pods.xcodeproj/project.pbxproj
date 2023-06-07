@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EF8685192CFA983CC37976F029F4D9 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC543535747CCB3C8BED46ED18B81146 /* ReplaceMe.swift */; };
+		210955F69627D6C07127BBCC4BAC2437 /* TAAuthFactors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 994BB248CB3FB05BF4EB876FD96375C0 /* TAAuthFactors-dummy.m */; };
+		41A516A61AFD5949447C5B69372DB655 /* Pods-TAAuthFactors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4893947237F51707A1C8967B7D06304F /* Pods-TAAuthFactors_Tests-dummy.m */; };
+		4F4EB52C54B3AD15557F3C67A8066577 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5D267A4BC7838DB942267BD90DA341D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		759A6AB63BA5BEB1CAE25638310D8E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8B4040432046E1ABDA13AB834B2366C4 /* Pods-TAAuthFactors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E9F66758A990521EE1E500F5DB4D390 /* Pods-TAAuthFactors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2775C8BC77487ED8B810C7C98C4AB89 /* TAAuthFactors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E48AF515E37425BBB8846586206D69 /* TAAuthFactors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDC432767DC1FB4AA226250683D9954F /* Pods-TAAuthFactors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A0194289060F73AC6F3257F86E25E0 /* Pods-TAAuthFactors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC167BAD12B0F6D53F7708AAFA6DB0E1 /* Pods-TAAuthFactors_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE0A62F146FF2E880E02BDAE791130 /* Pods-TAAuthFactors_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E852DC875DE267EAC8FDE3DFFF39799 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95AA76E40D306BF24D13E259F6740CE1;
+			remoteInfo = "Pods-TAAuthFactors_Example";
+		};
+		82CA11AD22F945AA8E3D8C57693FF1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B52F474F3FA52F20B541EB1BA0400BC;
+			remoteInfo = TAAuthFactors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9F66758A990521EE1E500F5DB4D390 /* Pods-TAAuthFactors_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAAuthFactors_Example-umbrella.h"; sourceTree = "<group>"; };
+		2BCB59535138B465B2760F74029DE875 /* Pods-TAAuthFactors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthFactors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		34A0194289060F73AC6F3257F86E25E0 /* Pods-TAAuthFactors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAAuthFactors_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3798C281B6660F617A6308D92A133577 /* Pods-TAAuthFactors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthFactors_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4893947237F51707A1C8967B7D06304F /* Pods-TAAuthFactors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAAuthFactors_Tests-dummy.m"; sourceTree = "<group>"; };
+		4C9B91797EBE6757F72C0933E2E77AA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5469A956F0812755E819ABCF1B543A5A /* TAAuthFactors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthFactors.debug.xcconfig; sourceTree = "<group>"; };
+		5E55D3132D38AD38EA150BC76B2AD0E8 /* Pods-TAAuthFactors_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		717E269139995FF33B521507B0209D4F /* TAAuthFactors-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TAAuthFactors-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74D8F4D369494E9F94883F9D5B2EFAB5 /* Pods-TAAuthFactors_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAAuthFactors_Example-frameworks.sh"; sourceTree = "<group>"; };
+		75205BEB0A23724F9610562C980C18A0 /* Pods-TAAuthFactors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthFactors_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7D5199C3D037273E3B08BC578FF1908A /* TAAuthFactors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthFactors-prefix.pch"; sourceTree = "<group>"; };
+		7E69EAAA7ED08C4306BBAB7BAD9A16D6 /* TAAuthFactors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TAAuthFactors.modulemap; sourceTree = "<group>"; };
+		807C301CA52BE4A8649E5FCCBECC2B7D /* Pods-TAAuthFactors_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Tests-Info.plist"; sourceTree = "<group>"; };
+		836A3FDD4F687DFCAA7C3F0597381C7F /* Pods-TAAuthFactors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAAuthFactors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		935FEBAF0953F97892006A1E0ED99DCB /* Pods-TAAuthFactors_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Example-Info.plist"; sourceTree = "<group>"; };
+		994BB248CB3FB05BF4EB876FD96375C0 /* TAAuthFactors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TAAuthFactors-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods-TAAuthFactors_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TAAuthFactors_Example"; path = Pods_TAAuthFactors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E48AF515E37425BBB8846586206D69 /* TAAuthFactors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthFactors-umbrella.h"; sourceTree = "<group>"; };
+		A5AB11A061C94B6906F91912475CECC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A6FDCA97A387F7D69F040A9D7655BA95 /* Pods-TAAuthFactors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAAuthFactors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB0253C3C816B27879BA232A5804040C /* TAAuthFactors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TAAuthFactors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB0F5D3029195B464E0B632B8E5A54E9 /* Pods-TAAuthFactors_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC01032E6E9E6DDCED4FDA0634A72BE7 /* TAAuthFactors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthFactors.release.xcconfig; sourceTree = "<group>"; };
+		AC543535747CCB3C8BED46ED18B81146 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = TAAuthFactors/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		ACA0FA23CA67B6A713B3DB1C4A169BB1 /* Pods-TAAuthFactors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TAAuthFactors_Example.modulemap"; sourceTree = "<group>"; };
+		B085D267430556A3C1912C27C060A878 /* Pods-TAAuthFactors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TAAuthFactors_Tests.modulemap"; sourceTree = "<group>"; };
+		BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TAAuthFactors; path = TAAuthFactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods-TAAuthFactors_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TAAuthFactors_Tests"; path = Pods_TAAuthFactors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D607EB24D5404E809F5BE3C7083FC70F /* Pods-TAAuthFactors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthFactors_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F8CE0A62F146FF2E880E02BDAE791130 /* Pods-TAAuthFactors_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAAuthFactors_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A3A918C305A88A42A8A73EE111758CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4EB52C54B3AD15557F3C67A8066577 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A10BE5247FE615A2227B0B8CE692A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D267A4BC7838DB942267BD90DA341D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F147B822DC6F873C9CACF83577E3C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759A6AB63BA5BEB1CAE25638310D8E84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A427313ECE38E96CFABCAB1188C352B /* Pods-TAAuthFactors_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ACA0FA23CA67B6A713B3DB1C4A169BB1 /* Pods-TAAuthFactors_Example.modulemap */,
+				836A3FDD4F687DFCAA7C3F0597381C7F /* Pods-TAAuthFactors_Example-acknowledgements.markdown */,
+				5E55D3132D38AD38EA150BC76B2AD0E8 /* Pods-TAAuthFactors_Example-acknowledgements.plist */,
+				F8CE0A62F146FF2E880E02BDAE791130 /* Pods-TAAuthFactors_Example-dummy.m */,
+				74D8F4D369494E9F94883F9D5B2EFAB5 /* Pods-TAAuthFactors_Example-frameworks.sh */,
+				935FEBAF0953F97892006A1E0ED99DCB /* Pods-TAAuthFactors_Example-Info.plist */,
+				0E9F66758A990521EE1E500F5DB4D390 /* Pods-TAAuthFactors_Example-umbrella.h */,
+				75205BEB0A23724F9610562C980C18A0 /* Pods-TAAuthFactors_Example.debug.xcconfig */,
+				3798C281B6660F617A6308D92A133577 /* Pods-TAAuthFactors_Example.release.xcconfig */,
+			);
+			name = "Pods-TAAuthFactors_Example";
+			path = "Target Support Files/Pods-TAAuthFactors_Example";
+			sourceTree = "<group>";
+		};
+		0F414F254EE7B4711722C9772644A740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods-TAAuthFactors_Example */,
+				C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods-TAAuthFactors_Tests */,
+				BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B0046F85783B0A0F04CBFA0EE2B090A /* Pods-TAAuthFactors_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B085D267430556A3C1912C27C060A878 /* Pods-TAAuthFactors_Tests.modulemap */,
+				A6FDCA97A387F7D69F040A9D7655BA95 /* Pods-TAAuthFactors_Tests-acknowledgements.markdown */,
+				AB0F5D3029195B464E0B632B8E5A54E9 /* Pods-TAAuthFactors_Tests-acknowledgements.plist */,
+				4893947237F51707A1C8967B7D06304F /* Pods-TAAuthFactors_Tests-dummy.m */,
+				807C301CA52BE4A8649E5FCCBECC2B7D /* Pods-TAAuthFactors_Tests-Info.plist */,
+				34A0194289060F73AC6F3257F86E25E0 /* Pods-TAAuthFactors_Tests-umbrella.h */,
+				2BCB59535138B465B2760F74029DE875 /* Pods-TAAuthFactors_Tests.debug.xcconfig */,
+				D607EB24D5404E809F5BE3C7083FC70F /* Pods-TAAuthFactors_Tests.release.xcconfig */,
+			);
+			name = "Pods-TAAuthFactors_Tests";
+			path = "Target Support Files/Pods-TAAuthFactors_Tests";
+			sourceTree = "<group>";
+		};
+		32259EB00521EA32C3A933C4E75B57D7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB11A061C94B6906F91912475CECC9 /* LICENSE */,
+				4C9B91797EBE6757F72C0933E2E77AA3 /* README.md */,
+				AB0253C3C816B27879BA232A5804040C /* TAAuthFactors.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A5352EEA40C5087EB4E457C10F52C944 /* TAAuthFactors */ = {
+			isa = PBXGroup;
+			children = (
+				AC543535747CCB3C8BED46ED18B81146 /* ReplaceMe.swift */,
+				32259EB00521EA32C3A933C4E75B57D7 /* Pod */,
+				A5CE2CB760026CD9BD07E2D502D7DF60 /* Support Files */,
+			);
+			name = TAAuthFactors;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A5CE2CB760026CD9BD07E2D502D7DF60 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E69EAAA7ED08C4306BBAB7BAD9A16D6 /* TAAuthFactors.modulemap */,
+				994BB248CB3FB05BF4EB876FD96375C0 /* TAAuthFactors-dummy.m */,
+				717E269139995FF33B521507B0209D4F /* TAAuthFactors-Info.plist */,
+				7D5199C3D037273E3B08BC578FF1908A /* TAAuthFactors-prefix.pch */,
+				A4E48AF515E37425BBB8846586206D69 /* TAAuthFactors-umbrella.h */,
+				5469A956F0812755E819ABCF1B543A5A /* TAAuthFactors.debug.xcconfig */,
+				AC01032E6E9E6DDCED4FDA0634A72BE7 /* TAAuthFactors.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TAAuthFactors";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DC5F33E244F796E7BB4D642FC8BED4A8 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0F414F254EE7B4711722C9772644A740 /* Products */,
+				D679239227E31E13CEDA426258CFD1CC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D679239227E31E13CEDA426258CFD1CC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A427313ECE38E96CFABCAB1188C352B /* Pods-TAAuthFactors_Example */,
+				2B0046F85783B0A0F04CBFA0EE2B090A /* Pods-TAAuthFactors_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DC5F33E244F796E7BB4D642FC8BED4A8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5352EEA40C5087EB4E457C10F52C944 /* TAAuthFactors */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C902372D5217F4BB552E76603FA39DA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2775C8BC77487ED8B810C7C98C4AB89 /* TAAuthFactors-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCC98690764C9A35DA29548DEB36C79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4040432046E1ABDA13AB834B2366C4 /* Pods-TAAuthFactors_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2479FC84747CC58DA96623FC5BDF04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC432767DC1FB4AA226250683D9954F /* Pods-TAAuthFactors_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2F6E7BF5D258DD12C76366BCD8431DE9 /* Pods-TAAuthFactors_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D1D78207EFFD6362BCD3CBD747F467 /* Build configuration list for PBXNativeTarget "Pods-TAAuthFactors_Tests" */;
+			buildPhases = (
+				EB2479FC84747CC58DA96623FC5BDF04 /* Headers */,
+				EC6C0249698F3A3AEF533C2AD95449F0 /* Sources */,
+				7F147B822DC6F873C9CACF83577E3C75 /* Frameworks */,
+				2864A9B2637B5D11FFB9907935245F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29BE849DCF8467ED6F54B821D253BBF /* PBXTargetDependency */,
+			);
+			name = "Pods-TAAuthFactors_Tests";
+			productName = Pods_TAAuthFactors_Tests;
+			productReference = C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods-TAAuthFactors_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B52F474F3FA52F20B541EB1BA0400BC /* TAAuthFactors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F700670AE3C3063C6056FCA01673E054 /* Build configuration list for PBXNativeTarget "TAAuthFactors" */;
+			buildPhases = (
+				C902372D5217F4BB552E76603FA39DA4 /* Headers */,
+				366362F01FE5C234DD94D9A5BB57D9D7 /* Sources */,
+				2A3A918C305A88A42A8A73EE111758CC /* Frameworks */,
+				F22627F467BD4E2EEC326C2C3D2ACDD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAAuthFactors;
+			productName = TAAuthFactors;
+			productReference = BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors */;
+			productType = "com.apple.product-type.framework";
+		};
+		95AA76E40D306BF24D13E259F6740CE1 /* Pods-TAAuthFactors_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53F8928CBB32FE6F39E13B25570C3C3 /* Build configuration list for PBXNativeTarget "Pods-TAAuthFactors_Example" */;
+			buildPhases = (
+				CCCC98690764C9A35DA29548DEB36C79 /* Headers */,
+				8FD526008F2297AECFAB2134E126114C /* Sources */,
+				46A10BE5247FE615A2227B0B8CE692A2 /* Frameworks */,
+				53FFE465C3D6380B562D3D754A447752 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04235DE4C2C071F35AD3A685104D45D /* PBXTargetDependency */,
+			);
+			name = "Pods-TAAuthFactors_Example";
+			productName = Pods_TAAuthFactors_Example;
+			productReference = A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods-TAAuthFactors_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0F414F254EE7B4711722C9772644A740 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95AA76E40D306BF24D13E259F6740CE1 /* Pods-TAAuthFactors_Example */,
+				2F6E7BF5D258DD12C76366BCD8431DE9 /* Pods-TAAuthFactors_Tests */,
+				6B52F474F3FA52F20B541EB1BA0400BC /* TAAuthFactors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2864A9B2637B5D11FFB9907935245F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53FFE465C3D6380B562D3D754A447752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22627F467BD4E2EEC326C2C3D2ACDD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366362F01FE5C234DD94D9A5BB57D9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EF8685192CFA983CC37976F029F4D9 /* ReplaceMe.swift in Sources */,
+				210955F69627D6C07127BBCC4BAC2437 /* TAAuthFactors-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD526008F2297AECFAB2134E126114C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC167BAD12B0F6D53F7708AAFA6DB0E1 /* Pods-TAAuthFactors_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6C0249698F3A3AEF533C2AD95449F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A516A61AFD5949447C5B69372DB655 /* Pods-TAAuthFactors_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A04235DE4C2C071F35AD3A685104D45D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TAAuthFactors;
+			target = 6B52F474F3FA52F20B541EB1BA0400BC /* TAAuthFactors */;
+			targetProxy = 82CA11AD22F945AA8E3D8C57693FF1D9 /* PBXContainerItemProxy */;
+		};
+		B29BE849DCF8467ED6F54B821D253BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TAAuthFactors_Example";
+			target = 95AA76E40D306BF24D13E259F6740CE1 /* Pods-TAAuthFactors_Example */;
+			targetProxy = 3E852DC875DE267EAC8FDE3DFFF39799 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FB31A7C6CB52FD47DF45E090D2DEAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3798C281B6660F617A6308D92A133577 /* Pods-TAAuthFactors_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5EEFB24C65A10F5BD5E856200A40DA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75205BEB0A23724F9610562C980C18A0 /* Pods-TAAuthFactors_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64FC67338E1DF72DF9C34DE80450EF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5469A956F0812755E819ABCF1B543A5A /* TAAuthFactors.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TAAuthFactors/TAAuthFactors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors.modulemap";
+				PRODUCT_MODULE_NAME = TAAuthFactors;
+				PRODUCT_NAME = TAAuthFactors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8A06D22FD252C2C7EED95D7E449DE779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D607EB24D5404E809F5BE3C7083FC70F /* Pods-TAAuthFactors_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B77F59032148DB9CBB4FC22FD089414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC01032E6E9E6DDCED4FDA0634A72BE7 /* TAAuthFactors.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TAAuthFactors/TAAuthFactors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors.modulemap";
+				PRODUCT_MODULE_NAME = TAAuthFactors;
+				PRODUCT_NAME = TAAuthFactors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFFC80D067DC3C6B2784F0A3157B8A3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BCB59535138B465B2760F74029DE875 /* Pods-TAAuthFactors_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D1D78207EFFD6362BCD3CBD747F467 /* Build configuration list for PBXNativeTarget "Pods-TAAuthFactors_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFC80D067DC3C6B2784F0A3157B8A3E /* Debug */,
+				8A06D22FD252C2C7EED95D7E449DE779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53F8928CBB32FE6F39E13B25570C3C3 /* Build configuration list for PBXNativeTarget "Pods-TAAuthFactors_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EEFB24C65A10F5BD5E856200A40DA88 /* Debug */,
+				3FB31A7C6CB52FD47DF45E090D2DEAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F700670AE3C3063C6056FCA01673E054 /* Build configuration list for PBXNativeTarget "TAAuthFactors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64FC67338E1DF72DF9C34DE80450EF82 /* Debug */,
+				9B77F59032148DB9CBB4FC22FD089414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

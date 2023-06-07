@@ -1,0 +1,6 @@
+framework module Pods_TAAuthFactors_Tests {
+  umbrella header "Pods-TAAuthFactors_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
