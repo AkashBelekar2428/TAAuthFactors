@@ -7,13 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01EF8685192CFA983CC37976F029F4D9 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC543535747CCB3C8BED46ED18B81146 /* ReplaceMe.swift */; };
 		210955F69627D6C07127BBCC4BAC2437 /* TAAuthFactors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 994BB248CB3FB05BF4EB876FD96375C0 /* TAAuthFactors-dummy.m */; };
 		41A516A61AFD5949447C5B69372DB655 /* Pods-TAAuthFactors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4893947237F51707A1C8967B7D06304F /* Pods-TAAuthFactors_Tests-dummy.m */; };
 		4F4EB52C54B3AD15557F3C67A8066577 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5D267A4BC7838DB942267BD90DA341D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		759A6AB63BA5BEB1CAE25638310D8E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8B4040432046E1ABDA13AB834B2366C4 /* Pods-TAAuthFactors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E9F66758A990521EE1E500F5DB4D390 /* Pods-TAAuthFactors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE758ED72A3091B400C60DC1 /* photo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA32A3091B200C60DC1 /* photo.xcassets */; };
+		AE758ED82A3091B400C60DC1 /* Email_Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA52A3091B200C60DC1 /* Email_Address.xib */; };
+		AE758ED92A3091B400C60DC1 /* Mobile_Number.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA62A3091B200C60DC1 /* Mobile_Number.xib */; };
+		AE758EDA2A3091B400C60DC1 /* DataPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA72A3091B200C60DC1 /* DataPickerController.xib */; };
+		AE758EDB2A3091B400C60DC1 /* AuthenticationLogIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA82A3091B200C60DC1 /* AuthenticationLogIn.xib */; };
+		AE758EDC2A3091B400C60DC1 /* PINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA92A3091B200C60DC1 /* PINView.xib */; };
+		AE758EDD2A3091B400C60DC1 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EAB2A3091B300C60DC1 /* AlertManager.swift */; };
+		AE758EDE2A3091B400C60DC1 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EAC2A3091B300C60DC1 /* ValidationManager.swift */; };
+		AE758EDF2A3091B400C60DC1 /* Email_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EAE2A3091B300C60DC1 /* Email_Address.swift */; };
+		AE758EE02A3091B400C60DC1 /* AuthenticationLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EB02A3091B300C60DC1 /* AuthenticationLogIn.swift */; };
+		AE758EE12A3091B400C60DC1 /* TAAuthenticateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EB22A3091B300C60DC1 /* TAAuthenticateRequest.swift */; };
+		AE758EE22A3091B400C60DC1 /* TAAuthenticateStartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EB32A3091B300C60DC1 /* TAAuthenticateStartRequest.swift */; };
+		AE758EE32A3091B400C60DC1 /* TAResendPINRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EB42A3091B300C60DC1 /* TAResendPINRequest.swift */; };
+		AE758EE42A3091B400C60DC1 /* authentication_font_file.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE758EB62A3091B300C60DC1 /* authentication_font_file.ttf */; };
+		AE758EE52A3091B400C60DC1 /* Mobile_Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EB82A3091B300C60DC1 /* Mobile_Number.swift */; };
+		AE758EE62A3091B400C60DC1 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EBA2A3091B300C60DC1 /* APIServices.swift */; };
+		AE758EE72A3091B400C60DC1 /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EBB2A3091B300C60DC1 /* ReachabilityHelper.swift */; };
+		AE758EE82A3091B400C60DC1 /* WSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EBC2A3091B300C60DC1 /* WSHelper.swift */; };
+		AE758EE92A3091B400C60DC1 /* MiddleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EBE2A3091B300C60DC1 /* MiddleLayer.swift */; };
+		AE758EEA2A3091B400C60DC1 /* AuthenticationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC02A3091B300C60DC1 /* AuthenticationConfiguration.swift */; };
+		AE758EEB2A3091B400C60DC1 /* TAAuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC22A3091B300C60DC1 /* TAAuthProtocols.swift */; };
+		AE758EEC2A3091B400C60DC1 /* WsHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC32A3091B300C60DC1 /* WsHelperProtocol.swift */; };
+		AE758EED2A3091B400C60DC1 /* TATextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC52A3091B300C60DC1 /* TATextFiled.swift */; };
+		AE758EEE2A3091B400C60DC1 /* TALable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC62A3091B300C60DC1 /* TALable.swift */; };
+		AE758EEF2A3091B400C60DC1 /* TAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC72A3091B300C60DC1 /* TAImage.swift */; };
+		AE758EF02A3091B400C60DC1 /* TAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC82A3091B300C60DC1 /* TAButton.swift */; };
+		AE758EF12A3091B400C60DC1 /* TAFontIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EC92A3091B300C60DC1 /* TAFontIcon.swift */; };
+		AE758EF22A3091B400C60DC1 /* TAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ECA2A3091B300C60DC1 /* TAColor.swift */; };
+		AE758EF32A3091B400C60DC1 /* TAAssetsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ECB2A3091B300C60DC1 /* TAAssetsImage.swift */; };
+		AE758EF42A3091B400C60DC1 /* TAUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ECC2A3091B400C60DC1 /* TAUIView.swift */; };
+		AE758EF52A3091B400C60DC1 /* TopControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ECE2A3091B400C60DC1 /* TopControllerManager.swift */; };
+		AE758EF62A3091B400C60DC1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ECF2A3091B400C60DC1 /* Utility.swift */; };
+		AE758EF72A3091B400C60DC1 /* ComponentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ED12A3091B400C60DC1 /* ComponentManager.swift */; };
+		AE758EF82A3091B400C60DC1 /* TAResendPINResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ED32A3091B400C60DC1 /* TAResendPINResponse.swift */; };
+		AE758EF92A3091B400C60DC1 /* TAAuthGenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ED42A3091B400C60DC1 /* TAAuthGenericResponse.swift */; };
+		AE758EFA2A3091B400C60DC1 /* PINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758ED62A3091B400C60DC1 /* PINView.swift */; };
 		B2775C8BC77487ED8B810C7C98C4AB89 /* TAAuthFactors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E48AF515E37425BBB8846586206D69 /* TAAuthFactors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDC432767DC1FB4AA226250683D9954F /* Pods-TAAuthFactors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A0194289060F73AC6F3257F86E25E0 /* Pods-TAAuthFactors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC167BAD12B0F6D53F7708AAFA6DB0E1 /* Pods-TAAuthFactors_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE0A62F146FF2E880E02BDAE791130 /* Pods-TAAuthFactors_Example-dummy.m */; };
@@ -42,7 +77,7 @@
 		34A0194289060F73AC6F3257F86E25E0 /* Pods-TAAuthFactors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAAuthFactors_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3798C281B6660F617A6308D92A133577 /* Pods-TAAuthFactors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthFactors_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4893947237F51707A1C8967B7D06304F /* Pods-TAAuthFactors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAAuthFactors_Tests-dummy.m"; sourceTree = "<group>"; };
-		4C9B91797EBE6757F72C0933E2E77AA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C9B91797EBE6757F72C0933E2E77AA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5469A956F0812755E819ABCF1B543A5A /* TAAuthFactors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthFactors.debug.xcconfig; sourceTree = "<group>"; };
 		5E55D3132D38AD38EA150BC76B2AD0E8 /* Pods-TAAuthFactors_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		717E269139995FF33B521507B0209D4F /* TAAuthFactors-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TAAuthFactors-Info.plist"; sourceTree = "<group>"; };
@@ -55,19 +90,54 @@
 		836A3FDD4F687DFCAA7C3F0597381C7F /* Pods-TAAuthFactors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAAuthFactors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		935FEBAF0953F97892006A1E0ED99DCB /* Pods-TAAuthFactors_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Example-Info.plist"; sourceTree = "<group>"; };
 		994BB248CB3FB05BF4EB876FD96375C0 /* TAAuthFactors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TAAuthFactors-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods-TAAuthFactors_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TAAuthFactors_Example"; path = Pods_TAAuthFactors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods_TAAuthFactors_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAAuthFactors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E48AF515E37425BBB8846586206D69 /* TAAuthFactors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthFactors-umbrella.h"; sourceTree = "<group>"; };
-		A5AB11A061C94B6906F91912475CECC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A5AB11A061C94B6906F91912475CECC9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A6FDCA97A387F7D69F040A9D7655BA95 /* Pods-TAAuthFactors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAAuthFactors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AB0253C3C816B27879BA232A5804040C /* TAAuthFactors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TAAuthFactors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB0253C3C816B27879BA232A5804040C /* TAAuthFactors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TAAuthFactors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB0F5D3029195B464E0B632B8E5A54E9 /* Pods-TAAuthFactors_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthFactors_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AC01032E6E9E6DDCED4FDA0634A72BE7 /* TAAuthFactors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthFactors.release.xcconfig; sourceTree = "<group>"; };
-		AC543535747CCB3C8BED46ED18B81146 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = TAAuthFactors/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		ACA0FA23CA67B6A713B3DB1C4A169BB1 /* Pods-TAAuthFactors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TAAuthFactors_Example.modulemap"; sourceTree = "<group>"; };
+		AE758EA32A3091B200C60DC1 /* photo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = photo.xcassets; sourceTree = "<group>"; };
+		AE758EA52A3091B200C60DC1 /* Email_Address.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Email_Address.xib; sourceTree = "<group>"; };
+		AE758EA62A3091B200C60DC1 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
+		AE758EA72A3091B200C60DC1 /* DataPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataPickerController.xib; sourceTree = "<group>"; };
+		AE758EA82A3091B200C60DC1 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
+		AE758EA92A3091B200C60DC1 /* PINView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
+		AE758EAB2A3091B300C60DC1 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		AE758EAC2A3091B300C60DC1 /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		AE758EAE2A3091B300C60DC1 /* Email_Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email_Address.swift; sourceTree = "<group>"; };
+		AE758EB02A3091B300C60DC1 /* AuthenticationLogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationLogIn.swift; sourceTree = "<group>"; };
+		AE758EB22A3091B300C60DC1 /* TAAuthenticateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAAuthenticateRequest.swift; sourceTree = "<group>"; };
+		AE758EB32A3091B300C60DC1 /* TAAuthenticateStartRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAAuthenticateStartRequest.swift; sourceTree = "<group>"; };
+		AE758EB42A3091B300C60DC1 /* TAResendPINRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAResendPINRequest.swift; sourceTree = "<group>"; };
+		AE758EB62A3091B300C60DC1 /* authentication_font_file.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = authentication_font_file.ttf; sourceTree = "<group>"; };
+		AE758EB82A3091B300C60DC1 /* Mobile_Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile_Number.swift; sourceTree = "<group>"; };
+		AE758EBA2A3091B300C60DC1 /* APIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		AE758EBB2A3091B300C60DC1 /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		AE758EBC2A3091B300C60DC1 /* WSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHelper.swift; sourceTree = "<group>"; };
+		AE758EBE2A3091B300C60DC1 /* MiddleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleLayer.swift; sourceTree = "<group>"; };
+		AE758EC02A3091B300C60DC1 /* AuthenticationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConfiguration.swift; sourceTree = "<group>"; };
+		AE758EC22A3091B300C60DC1 /* TAAuthProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAAuthProtocols.swift; sourceTree = "<group>"; };
+		AE758EC32A3091B300C60DC1 /* WsHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WsHelperProtocol.swift; sourceTree = "<group>"; };
+		AE758EC52A3091B300C60DC1 /* TATextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATextFiled.swift; sourceTree = "<group>"; };
+		AE758EC62A3091B300C60DC1 /* TALable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TALable.swift; sourceTree = "<group>"; };
+		AE758EC72A3091B300C60DC1 /* TAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAImage.swift; sourceTree = "<group>"; };
+		AE758EC82A3091B300C60DC1 /* TAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAButton.swift; sourceTree = "<group>"; };
+		AE758EC92A3091B300C60DC1 /* TAFontIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAFontIcon.swift; sourceTree = "<group>"; };
+		AE758ECA2A3091B300C60DC1 /* TAColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAColor.swift; sourceTree = "<group>"; };
+		AE758ECB2A3091B300C60DC1 /* TAAssetsImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAAssetsImage.swift; sourceTree = "<group>"; };
+		AE758ECC2A3091B400C60DC1 /* TAUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAUIView.swift; sourceTree = "<group>"; };
+		AE758ECE2A3091B400C60DC1 /* TopControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopControllerManager.swift; sourceTree = "<group>"; };
+		AE758ECF2A3091B400C60DC1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		AE758ED12A3091B400C60DC1 /* ComponentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentManager.swift; sourceTree = "<group>"; };
+		AE758ED32A3091B400C60DC1 /* TAResendPINResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAResendPINResponse.swift; sourceTree = "<group>"; };
+		AE758ED42A3091B400C60DC1 /* TAAuthGenericResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAAuthGenericResponse.swift; sourceTree = "<group>"; };
+		AE758ED62A3091B400C60DC1 /* PINView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINView.swift; sourceTree = "<group>"; };
 		B085D267430556A3C1912C27C060A878 /* Pods-TAAuthFactors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TAAuthFactors_Tests.modulemap"; sourceTree = "<group>"; };
-		BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TAAuthFactors; path = TAAuthFactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods-TAAuthFactors_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TAAuthFactors_Tests"; path = Pods_TAAuthFactors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAAuthFactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods_TAAuthFactors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAAuthFactors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D607EB24D5404E809F5BE3C7083FC70F /* Pods-TAAuthFactors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthFactors_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F8CE0A62F146FF2E880E02BDAE791130 /* Pods-TAAuthFactors_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAAuthFactors_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,9 +190,9 @@
 		0F414F254EE7B4711722C9772644A740 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods-TAAuthFactors_Example */,
-				C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods-TAAuthFactors_Tests */,
-				BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors */,
+				A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods_TAAuthFactors_Example.framework */,
+				C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods_TAAuthFactors_Tests.framework */,
+				BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +234,7 @@
 		A5352EEA40C5087EB4E457C10F52C944 /* TAAuthFactors */ = {
 			isa = PBXGroup;
 			children = (
-				AC543535747CCB3C8BED46ED18B81146 /* ReplaceMe.swift */,
+				AE758EA12A30918700C60DC1 /* Source */,
 				32259EB00521EA32C3A933C4E75B57D7 /* Pod */,
 				A5CE2CB760026CD9BD07E2D502D7DF60 /* Support Files */,
 			);
@@ -185,6 +255,185 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TAAuthFactors";
+			sourceTree = "<group>";
+		};
+		AE758EA12A30918700C60DC1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EA22A3091B200C60DC1 /* Assets */,
+				AE758ED02A3091B400C60DC1 /* ComponentManager */,
+				AE758EBF2A3091B300C60DC1 /* Configurations */,
+				AE758EAD2A3091B300C60DC1 /* EmailAuth */,
+				AE758EB52A3091B300C60DC1 /* Fonts */,
+				AE758EAF2A3091B300C60DC1 /* LoginAuth */,
+				AE758EB72A3091B300C60DC1 /* MobileAuth */,
+				AE758EB92A3091B300C60DC1 /* Network */,
+				AE758ED52A3091B400C60DC1 /* PINAuth */,
+				AE758EBD2A3091B300C60DC1 /* Presentor */,
+				AE758EC12A3091B300C60DC1 /* Protocol */,
+				AE758EB12A3091B300C60DC1 /* Request */,
+				AE758EA42A3091B200C60DC1 /* Resources */,
+				AE758ED22A3091B400C60DC1 /* Response */,
+				AE758EC42A3091B300C60DC1 /* UIClasses */,
+				AE758ECD2A3091B400C60DC1 /* Utility */,
+				AE758EAA2A3091B300C60DC1 /* ValidationManager */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AE758EA22A3091B200C60DC1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EA32A3091B200C60DC1 /* photo.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AE758EA42A3091B200C60DC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EA52A3091B200C60DC1 /* Email_Address.xib */,
+				AE758EA62A3091B200C60DC1 /* Mobile_Number.xib */,
+				AE758EA72A3091B200C60DC1 /* DataPickerController.xib */,
+				AE758EA82A3091B200C60DC1 /* AuthenticationLogIn.xib */,
+				AE758EA92A3091B200C60DC1 /* PINView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE758EAA2A3091B300C60DC1 /* ValidationManager */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EAB2A3091B300C60DC1 /* AlertManager.swift */,
+				AE758EAC2A3091B300C60DC1 /* ValidationManager.swift */,
+			);
+			path = ValidationManager;
+			sourceTree = "<group>";
+		};
+		AE758EAD2A3091B300C60DC1 /* EmailAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EAE2A3091B300C60DC1 /* Email_Address.swift */,
+			);
+			path = EmailAuth;
+			sourceTree = "<group>";
+		};
+		AE758EAF2A3091B300C60DC1 /* LoginAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EB02A3091B300C60DC1 /* AuthenticationLogIn.swift */,
+			);
+			path = LoginAuth;
+			sourceTree = "<group>";
+		};
+		AE758EB12A3091B300C60DC1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EB22A3091B300C60DC1 /* TAAuthenticateRequest.swift */,
+				AE758EB32A3091B300C60DC1 /* TAAuthenticateStartRequest.swift */,
+				AE758EB42A3091B300C60DC1 /* TAResendPINRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		AE758EB52A3091B300C60DC1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EB62A3091B300C60DC1 /* authentication_font_file.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AE758EB72A3091B300C60DC1 /* MobileAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EB82A3091B300C60DC1 /* Mobile_Number.swift */,
+			);
+			path = MobileAuth;
+			sourceTree = "<group>";
+		};
+		AE758EB92A3091B300C60DC1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EBA2A3091B300C60DC1 /* APIServices.swift */,
+				AE758EBB2A3091B300C60DC1 /* ReachabilityHelper.swift */,
+				AE758EBC2A3091B300C60DC1 /* WSHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AE758EBD2A3091B300C60DC1 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EBE2A3091B300C60DC1 /* MiddleLayer.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		AE758EBF2A3091B300C60DC1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EC02A3091B300C60DC1 /* AuthenticationConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		AE758EC12A3091B300C60DC1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EC22A3091B300C60DC1 /* TAAuthProtocols.swift */,
+				AE758EC32A3091B300C60DC1 /* WsHelperProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AE758EC42A3091B300C60DC1 /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AE758EC52A3091B300C60DC1 /* TATextFiled.swift */,
+				AE758EC62A3091B300C60DC1 /* TALable.swift */,
+				AE758EC72A3091B300C60DC1 /* TAImage.swift */,
+				AE758EC82A3091B300C60DC1 /* TAButton.swift */,
+				AE758EC92A3091B300C60DC1 /* TAFontIcon.swift */,
+				AE758ECA2A3091B300C60DC1 /* TAColor.swift */,
+				AE758ECB2A3091B300C60DC1 /* TAAssetsImage.swift */,
+				AE758ECC2A3091B400C60DC1 /* TAUIView.swift */,
+			);
+			path = UIClasses;
+			sourceTree = "<group>";
+		};
+		AE758ECD2A3091B400C60DC1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AE758ECE2A3091B400C60DC1 /* TopControllerManager.swift */,
+				AE758ECF2A3091B400C60DC1 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AE758ED02A3091B400C60DC1 /* ComponentManager */ = {
+			isa = PBXGroup;
+			children = (
+				AE758ED12A3091B400C60DC1 /* ComponentManager.swift */,
+			);
+			path = ComponentManager;
+			sourceTree = "<group>";
+		};
+		AE758ED22A3091B400C60DC1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				AE758ED32A3091B400C60DC1 /* TAResendPINResponse.swift */,
+				AE758ED42A3091B400C60DC1 /* TAAuthGenericResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		AE758ED52A3091B400C60DC1 /* PINAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AE758ED62A3091B400C60DC1 /* PINView.swift */,
+			);
+			path = PINAuth;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -269,7 +518,7 @@
 			);
 			name = "Pods-TAAuthFactors_Tests";
 			productName = Pods_TAAuthFactors_Tests;
-			productReference = C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods-TAAuthFactors_Tests */;
+			productReference = C562B50DFD6F94F7B6FB458267CB0DF0 /* Pods_TAAuthFactors_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6B52F474F3FA52F20B541EB1BA0400BC /* TAAuthFactors */ = {
@@ -287,7 +536,7 @@
 			);
 			name = TAAuthFactors;
 			productName = TAAuthFactors;
-			productReference = BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors */;
+			productReference = BA968F3CB5BA358FD4500518A1AB5CE0 /* TAAuthFactors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		95AA76E40D306BF24D13E259F6740CE1 /* Pods-TAAuthFactors_Example */ = {
@@ -306,7 +555,7 @@
 			);
 			name = "Pods-TAAuthFactors_Example";
 			productName = Pods_TAAuthFactors_Example;
-			productReference = A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods-TAAuthFactors_Example */;
+			productReference = A2E79AFC5032CA6CEC1FA1202EF30332 /* Pods_TAAuthFactors_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +565,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6B52F474F3FA52F20B541EB1BA0400BC = {
+						LastSwiftMigration = "";
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -357,6 +611,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE758ED72A3091B400C60DC1 /* photo.xcassets in Resources */,
+				AE758EDA2A3091B400C60DC1 /* DataPickerController.xib in Resources */,
+				AE758EDC2A3091B400C60DC1 /* PINView.xib in Resources */,
+				AE758EE42A3091B400C60DC1 /* authentication_font_file.ttf in Resources */,
+				AE758EDB2A3091B400C60DC1 /* AuthenticationLogIn.xib in Resources */,
+				AE758ED92A3091B400C60DC1 /* Mobile_Number.xib in Resources */,
+				AE758ED82A3091B400C60DC1 /* Email_Address.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +628,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EF8685192CFA983CC37976F029F4D9 /* ReplaceMe.swift in Sources */,
+				AE758EE02A3091B400C60DC1 /* AuthenticationLogIn.swift in Sources */,
+				AE758EE32A3091B400C60DC1 /* TAResendPINRequest.swift in Sources */,
+				AE758EEA2A3091B400C60DC1 /* AuthenticationConfiguration.swift in Sources */,
+				AE758EF32A3091B400C60DC1 /* TAAssetsImage.swift in Sources */,
+				AE758EE72A3091B400C60DC1 /* ReachabilityHelper.swift in Sources */,
+				AE758EF22A3091B400C60DC1 /* TAColor.swift in Sources */,
+				AE758EE12A3091B400C60DC1 /* TAAuthenticateRequest.swift in Sources */,
+				AE758EF12A3091B400C60DC1 /* TAFontIcon.swift in Sources */,
+				AE758EE92A3091B400C60DC1 /* MiddleLayer.swift in Sources */,
+				AE758EDE2A3091B400C60DC1 /* ValidationManager.swift in Sources */,
+				AE758EE62A3091B400C60DC1 /* APIServices.swift in Sources */,
+				AE758EF92A3091B400C60DC1 /* TAAuthGenericResponse.swift in Sources */,
+				AE758EFA2A3091B400C60DC1 /* PINView.swift in Sources */,
+				AE758EDD2A3091B400C60DC1 /* AlertManager.swift in Sources */,
+				AE758EEB2A3091B400C60DC1 /* TAAuthProtocols.swift in Sources */,
+				AE758EEF2A3091B400C60DC1 /* TAImage.swift in Sources */,
+				AE758EF72A3091B400C60DC1 /* ComponentManager.swift in Sources */,
+				AE758EE82A3091B400C60DC1 /* WSHelper.swift in Sources */,
+				AE758EF42A3091B400C60DC1 /* TAUIView.swift in Sources */,
+				AE758EF52A3091B400C60DC1 /* TopControllerManager.swift in Sources */,
+				AE758EEE2A3091B400C60DC1 /* TALable.swift in Sources */,
 				210955F69627D6C07127BBCC4BAC2437 /* TAAuthFactors-dummy.m in Sources */,
+				AE758EF82A3091B400C60DC1 /* TAResendPINResponse.swift in Sources */,
+				AE758EF02A3091B400C60DC1 /* TAButton.swift in Sources */,
+				AE758EF62A3091B400C60DC1 /* Utility.swift in Sources */,
+				AE758EED2A3091B400C60DC1 /* TATextFiled.swift in Sources */,
+				AE758EE22A3091B400C60DC1 /* TAAuthenticateStartRequest.swift in Sources */,
+				AE758EEC2A3091B400C60DC1 /* WsHelperProtocol.swift in Sources */,
+				AE758EE52A3091B400C60DC1 /* Mobile_Number.swift in Sources */,
+				AE758EDF2A3091B400C60DC1 /* Email_Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +711,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example.modulemap";
@@ -456,7 +745,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example.modulemap";
@@ -489,7 +778,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TAAuthFactors/TAAuthFactors-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors.modulemap";
 				PRODUCT_MODULE_NAME = TAAuthFactors;
@@ -539,6 +828,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -554,13 +844,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -582,7 +871,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests.modulemap";
@@ -616,7 +905,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TAAuthFactors/TAAuthFactors-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TAAuthFactors/TAAuthFactors.modulemap";
 				PRODUCT_MODULE_NAME = TAAuthFactors;
@@ -648,7 +937,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthFactors_Tests/Pods-TAAuthFactors_Tests.modulemap";
@@ -700,6 +989,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -718,7 +1008,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
