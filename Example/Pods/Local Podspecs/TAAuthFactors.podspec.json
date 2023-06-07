@@ -1,8 +1,8 @@
 {
   "name": "TAAuthFactors",
-  "version": "0.1.0",
-  "summary": "A short description of TAAuthFactors.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.1.0",
+  "summary": "Simple Library of TAAuthFactors.",
+  "description": "'One Of the best Library. Very simple to use and readable'",
   "homepage": "https://github.com/akashbelekar2428/TAAuthFactors",
   "license": {
     "type": "MIT",
@@ -13,10 +13,42 @@
   },
   "source": {
     "git": "https://github.com/akashbelekar2428/TAAuthFactors.git",
-    "tag": "0.1.0"
+    "tag": "1.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "TAAuthFactors/Classes/**/*"
+  "swift_versions": "5.0",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.4"
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "ObjectMapper": [
+      "~> 4.2"
+    ]
+  },
+  "resources": [
+    "Source/Assets/*.xcassets",
+    "Source/ComponentManager/*.swift",
+    "Source/Configurations/*.swift",
+    "Source/EmailAuth/*.swift",
+    "Source/Fonts/*.ttf",
+    "Source/LoginAuth/*.swift",
+    "Source/MobileAuth/*.swift",
+    "Source/Network/*.swift",
+    "Source/PINAuth/*.swift",
+    "Source/Presentor/*.swift",
+    "Source/Protocol/*.swift",
+    "Source/Request/*.swift",
+    "Source/Resources/*.xib",
+    "Source/Response/*.swift",
+    "Source/UIClasses/*.swift",
+    "Source/Utility/*.swift",
+    "Source/ValidationManager/*.swift"
+  ],
+  "source_files": "Source/**/*.swift",
+  "swift_version": "5.0"
 }
