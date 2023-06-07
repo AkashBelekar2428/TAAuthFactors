@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TAAuthFactors'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'Simple Library of TAAuthFactors.'
 
 # This description is used to generate tags and improve search results.
@@ -35,22 +35,22 @@ Pod::Spec.new do |s|
   s.dependency 'ObjectMapper', '~> 4.2'
   s.resources = [
                   'Source/Assets/*.xcassets',
-                  'Source/ComponentManager/*.swift',
-                  'Source/Configurations/*.swift',
-                  'Source/EmailAuth/*.swift',
+                  'Source/ComponentManager/**/*.swift',
+                  'Source/Configurations/**/*.swift',
+                  'Source/EmailAuth/**/*.swift',
                   'Source/Fonts/*.ttf',
-                  'Source/LoginAuth/*.swift',
-                  'Source/MobileAuth/*.swift',
-                  'Source/Network/*.swift',
-                  'Source/PINAuth/*.swift',
-                  'Source/Presentor/*.swift',
-                  'Source/Protocol/*.swift',
-                  'Source/Request/*.swift',
+                  'Source/LoginAuth/**/*.swift',
+                  'Source/MobileAuth/**/*.swift',
+                  'Source/Network/**/*.swift',
+                  'Source/PINAuth/**/*.swift',
+                  'Source/Presentor/**/*.swift',
+                  'Source/Protocol/**/*.swift',
+                  'Source/Request/**/*.swift',
                   'Source/Resources/*.xib',
-                  'Source/Response/*.swift',
-                  'Source/UIClasses/*.swift',
-                  'Source/Utility/*.swift',
-                  'Source/ValidationManager/*.swift'
+                  'Source/Response/**/*.swift',
+                  'Source/UIClasses/**/*.swift',
+                  'Source/Utility/**/*.swift',
+                  'Source/ValidationManager/**/**.swift'
                 ]
   s.source_files = 'Source/**/*.swift'
   

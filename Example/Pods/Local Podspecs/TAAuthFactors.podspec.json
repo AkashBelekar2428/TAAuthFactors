@@ -1,6 +1,6 @@
 {
   "name": "TAAuthFactors",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "summary": "Simple Library of TAAuthFactors.",
   "description": "'One Of the best Library. Very simple to use and readable'",
   "homepage": "https://github.com/akashbelekar2428/TAAuthFactors",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/akashbelekar2428/TAAuthFactors.git",
-    "tag": "1.1.0"
+    "tag": "1.1.1"
   },
   "platforms": {
     "ios": "12.0"
@@ -32,22 +32,22 @@
   },
   "resources": [
     "Source/Assets/*.xcassets",
-    "Source/ComponentManager/*.swift",
-    "Source/Configurations/*.swift",
-    "Source/EmailAuth/*.swift",
+    "Source/ComponentManager/**/*.swift",
+    "Source/Configurations/**/*.swift",
+    "Source/EmailAuth/**/*.swift",
     "Source/Fonts/*.ttf",
-    "Source/LoginAuth/*.swift",
-    "Source/MobileAuth/*.swift",
-    "Source/Network/*.swift",
-    "Source/PINAuth/*.swift",
-    "Source/Presentor/*.swift",
-    "Source/Protocol/*.swift",
-    "Source/Request/*.swift",
+    "Source/LoginAuth/**/*.swift",
+    "Source/MobileAuth/**/*.swift",
+    "Source/Network/**/*.swift",
+    "Source/PINAuth/**/*.swift",
+    "Source/Presentor/**/*.swift",
+    "Source/Protocol/**/*.swift",
+    "Source/Request/**/*.swift",
     "Source/Resources/*.xib",
-    "Source/Response/*.swift",
-    "Source/UIClasses/*.swift",
-    "Source/Utility/*.swift",
-    "Source/ValidationManager/*.swift"
+    "Source/Response/**/*.swift",
+    "Source/UIClasses/**/*.swift",
+    "Source/Utility/**/*.swift",
+    "Source/ValidationManager/**/**.swift"
   ],
   "source_files": "Source/**/*.swift",
   "swift_version": "5.0"

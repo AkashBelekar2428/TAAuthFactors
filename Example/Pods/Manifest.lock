@@ -2,7 +2,7 @@ PODS:
   - Alamofire (5.7.1)
   - ObjectMapper (4.2.0)
   - SVProgressHUD (2.2.5)
-  - TAAuthFactors (1.1.0):
+  - TAAuthFactors (1.1.1):
     - Alamofire (~> 5.4)
     - ObjectMapper (~> 4.2)
     - SVProgressHUD
@@ -27,8 +27,8 @@ SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TAAuthFactors: 39c2100fde7f86d6c13c5b0c3ac8399bf0f53835
+  TAAuthFactors: 95cec46304e60dc5f9c36b2b3ba7660ea302caf6
 
-PODFILE CHECKSUM: 60487faf607979b97b69a1b493d243d1a7a33054
+PODFILE CHECKSUM: 7fba9edabeb93685b53baecda14e37f5594760bd
 
 COCOAPODS: 1.12.1
