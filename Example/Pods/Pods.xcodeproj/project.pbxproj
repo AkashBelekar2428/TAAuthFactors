@@ -16,7 +16,6 @@
 		AE758ED72A3091B400C60DC1 /* photo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA32A3091B200C60DC1 /* photo.xcassets */; };
 		AE758ED82A3091B400C60DC1 /* Email_Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA52A3091B200C60DC1 /* Email_Address.xib */; };
 		AE758ED92A3091B400C60DC1 /* Mobile_Number.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA62A3091B200C60DC1 /* Mobile_Number.xib */; };
-		AE758EDA2A3091B400C60DC1 /* DataPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA72A3091B200C60DC1 /* DataPickerController.xib */; };
 		AE758EDB2A3091B400C60DC1 /* AuthenticationLogIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA82A3091B200C60DC1 /* AuthenticationLogIn.xib */; };
 		AE758EDC2A3091B400C60DC1 /* PINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE758EA92A3091B200C60DC1 /* PINView.xib */; };
 		AE758EDD2A3091B400C60DC1 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE758EAB2A3091B300C60DC1 /* AlertManager.swift */; };
@@ -102,7 +101,6 @@
 		AE758EA32A3091B200C60DC1 /* photo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = photo.xcassets; sourceTree = "<group>"; };
 		AE758EA52A3091B200C60DC1 /* Email_Address.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Email_Address.xib; sourceTree = "<group>"; };
 		AE758EA62A3091B200C60DC1 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
-		AE758EA72A3091B200C60DC1 /* DataPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataPickerController.xib; sourceTree = "<group>"; };
 		AE758EA82A3091B200C60DC1 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
 		AE758EA92A3091B200C60DC1 /* PINView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
 		AE758EAB2A3091B300C60DC1 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
@@ -294,7 +292,6 @@
 			children = (
 				AE758EA52A3091B200C60DC1 /* Email_Address.xib */,
 				AE758EA62A3091B200C60DC1 /* Mobile_Number.xib */,
-				AE758EA72A3091B200C60DC1 /* DataPickerController.xib */,
 				AE758EA82A3091B200C60DC1 /* AuthenticationLogIn.xib */,
 				AE758EA92A3091B200C60DC1 /* PINView.xib */,
 			);
@@ -612,7 +609,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE758ED72A3091B400C60DC1 /* photo.xcassets in Resources */,
-				AE758EDA2A3091B400C60DC1 /* DataPickerController.xib in Resources */,
 				AE758EDC2A3091B400C60DC1 /* PINView.xib in Resources */,
 				AE758EE42A3091B400C60DC1 /* authentication_font_file.ttf in Resources */,
 				AE758EDB2A3091B400C60DC1 /* AuthenticationLogIn.xib in Resources */,

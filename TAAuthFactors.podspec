@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
                   'Source/Utility/*.swift',
                   'Source/ValidationManager/*.swift'
                 ]
-  s.source_files = 'Source/**/*'
+  s.source_files = 'Source/**/*.swift'
   
   # s.resource_bundles = {
   #   'TAAuthFactors' => ['TAAuthFactors/Assets/*.png']
