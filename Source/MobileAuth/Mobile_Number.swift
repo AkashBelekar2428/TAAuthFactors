@@ -80,8 +80,11 @@ public class Mobile_Number:UIView {
         containerView.TAViewShadowRadius = 6
         containerView.TAViewHeight = 350
         
-        //MARK: Image Logo
-        imgLogo.TAImageLogo = UIImage(named: "\("logo")") ?? UIImage()
+        //MARK: Header Img Logo
+        if let image = UIImage(named: "logo",in: Bundle(for:TAAssetsImage.self ),compatibleWith: nil){
+            imgLogo.TAImageLogo = image
+        }
+        
         
         //MARK: Login Txt
         lblLogin.TAText = "Login"
