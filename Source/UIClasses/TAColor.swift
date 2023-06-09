@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 //MARK: UIColor Extension
 public class TAColor{

@@ -17,7 +17,6 @@ public protocol ComponentManagerDelegate {
 
 //MARK:  ComponentManager Class
 public class ComponentManager{
-    
     //MARK: init
     public init(delegate: ComponentManagerDelegate) {
         self.delegate = delegate
@@ -27,7 +26,6 @@ public class ComponentManager{
     private var enum_authType: TAAuthFactorType = .NONE
     private var enum_nextStep: TAAuthFactorNextStep = .NONE
     private var enum_componentType: TAAuthFactorType = .NONE
-    
     public var delegate : ComponentManagerDelegate?
     
     //MARK: Tag

@@ -59,6 +59,7 @@ public class TAAuthGenericResponse : Mappable {
     public var errors : [String] = []
     public var validationErrors : [TAAuthGenericResponseValidationErrorsObj]!
     
+    //MARK: init
     public init() {}
     required public init?(map: Map) {}
     public func mapping(map: Map){
@@ -68,7 +69,7 @@ public class TAAuthGenericResponse : Mappable {
         errorCode               <- map["errorCode"]
         errors                  <- map["errors"]
         validationErrors        <- map["validationErrors"]
-    }  
+    }
 }
 
 // MARK: Data Response Model
@@ -84,8 +85,8 @@ public class TAAuthGenericResponseDataObj : Mappable {
     public var nextStepEnum : TAAuthFactorNextStep = .NONE
     public var authType : TAAuthFactorType = .NONE
     public var componentType : TAAuthFactorType = .NONE
-
-   
+    
+    //MARK: init
     public init() {}
     required public init?(map: Map) {}
     
@@ -105,7 +106,8 @@ public class TAAuthGenericResponseTokenObj : Mappable {
     //MARK: Variables
     public var token : String = ""
     public var tokenExpiry : String = ""
-   
+    
+    //MARK: init
     public init() {}
     required public init?(map: Map) {}
     
@@ -121,12 +123,13 @@ public class TAAuthGenericResponseValidationErrorsObj : Mappable {
     //MARK: Variables
     public var propertyName : String = ""
     public var errorMessage : String = ""
-   
+    
+    //MARK: init
     public init() {}
     required public init?(map: Map) {}
     
     public func mapping(map: Map){
         propertyName                 <- map["propertyName"]
         errorMessage                 <- map["errorMessage"]
-    } 
+    }
 }

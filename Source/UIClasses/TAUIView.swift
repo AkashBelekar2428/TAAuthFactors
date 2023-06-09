@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 //MARK: TAUIView Class
 public class TAUIView{
     

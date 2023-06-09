@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: TAFontIcon Class
 public class TAFontIcon {
     
     // MARK: Font Icons
@@ -18,6 +19,5 @@ public class TAFontIcon {
     static public let Icon_mail = "\u{e908}"
     static public let Icon_user = "\u{e90B}"
     static public let TATextColor = TAColor.iconColor
-    static public let TAEyeIconColor = UIColor(red: 183/255, green: 187/255, blue: 191/255, alpha: 1)
-    
+    static public let TAEyeIconColor = UIColor(red: 183/255, green: 187/255, blue: 191/255, alpha: 1)    
 }

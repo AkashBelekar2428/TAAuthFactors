@@ -37,7 +37,7 @@ public class WSHelper: NSObject {
     //MARK: WSHelper Instance
     public static let sharedInstance = WSHelper()
     var isLive:Bool! = true
-  
+    
     //MARK: Init class
     private override init(){
         let manager = Alamofire.Session.default
@@ -92,7 +92,7 @@ public class WSHelper: NSObject {
                         case 401:
                             completion(.sessionTimeOut(response))
                         default :
-                           
+                            
                             let bodyString = String.init(data: response.data!, encoding: String.Encoding.utf8)!
                             let genericResp = Mapper<TAAuthGenericResponse>().map(JSONString: bodyString)
                             if genericResp != nil{
@@ -104,7 +104,7 @@ public class WSHelper: NSObject {
                         }
                     } else {
                         if response.response != nil {
-//                            let code = SessionHandler.sharedInstance.chekSessionTimedOutForResp(respCode:response.response!.statusCode)
+                            //                            let code = SessionHandler.sharedInstance.chekSessionTimedOutForResp(respCode:response.response!.statusCode)
                             let statusCode = response.response?.statusCode
                             if statusCode == 401 {
                                 completion(.sessionTimeOut(response))
@@ -182,7 +182,6 @@ public class WSHelper: NSObject {
             }
         }
     }
-    
 }
 
 //MARK: GeneralRespModel Structure

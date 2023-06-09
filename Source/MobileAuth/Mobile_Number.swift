@@ -38,14 +38,12 @@ public class Mobile_Number:UIView {
     let pickerView = UIPickerView()
     
     //MARK: System methods
-    required init?(coder aDecoder: NSCoder)
-    {
+    required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    override init(frame: CGRect)
-    {
+    override init(frame: CGRect){
         super.init(frame: frame)
         commonInit()
     }
@@ -72,7 +70,7 @@ public class Mobile_Number:UIView {
         let lblEnterValidMobile = TALable()
         let btnValide = TAButton()
         
-        //MARK: ContainerView
+        //MARK: Configuration for ContainerView
         containerView.TAViewCornerRadius = 10
         containerView.TAViewShadowColor = TAColor.shadowColor
         containerView.TAViewShadowOpacity = 0.4
@@ -80,58 +78,57 @@ public class Mobile_Number:UIView {
         containerView.TAViewShadowRadius = 6
         containerView.TAViewHeight = 350
         
-        //MARK: Header Img Logo
+        //MARK: Configuration for Image Logo
         if let image = UIImage(named: "logo",in: Bundle(for:TAAssetsImage.self ),compatibleWith: nil){
             imgLogo.TAImageLogo = image
         }
         
-        
-        //MARK: Login Txt
+        //MARK: Configuration for Login Label
         lblLogin.TAText = "Login"
         lblLogin.TATextColor = TAColor.textLblColor
         lblLogin.TATextAlignment = .left
         lblLogin.TATextFont = .boldSystemFont(ofSize: 28)
         
-        //MARK: Mobile Txt
+        //MARK: Configuration for Mobile Label
         lblMobile.TAText = "Mobile"
         lblMobile.TATextColor = TAColor.textLblColor
         lblMobile.TATextAlignment = .left
         lblMobile.TATextFont = .systemFont(ofSize: 14, weight: .medium)
         
-        //MARK: Mobile TextFiled View
+        //MARK: Configuration for Mobile TextFiled View
         tfView.TAViewCornerRadius = 5
         tfView.TAViewborderWidth = 1
         tfView.TAViewBorderColor = TAColor.shadowColor
         
-        //MARK: Country Code Label
+        //MARK: Configuration for Country Code Label
         lblCountryCode.TAText = "+91"
         lblCountryCode.TATextColor = TAColor.textLblColor
         lblCountryCode.TATextFont = .systemFont(ofSize: 14, weight: .medium)
         lblCountryCode.TATextAlignment = .left
         lblCountryCode.TATextNumberOfLines = 0
         
-        //MARK: Country Code Icon Label
+        //MARK: Configuration for Country Code Icon Label
         lblCountryCodeIcon.TAText = TAFontIcon.Icon_down_arrow
         lblCountryCodeIcon.TATextColor = TAFontIcon.TATextColor
         lblCountryCodeIcon.TATextFont = UIFont(name: "authentication_font_file", size: 20)!
         
-        //MARK: Email Textfiled
+        //MARK: Configuration for Email Textfiled PlaceHolder
         textField.TATextfiledPlaceHolderText = "123456789"
         textField.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
         textField.TATextfiledPlaceHolderTextFont = .systemFont(ofSize: 14, weight: .medium)
         
-        //MARK: CountryCode View
+        //MARK: Configuration for CountryCode View
         viewCountryCode.TAViewBorderColor = TAColor.placeholderText_borderColor
         viewCountryCode.TAViewborderWidth = 1
         viewCountryCode.TAViewCornerRadius = 5
         
         
-        //MARK: Enter Valid Mobile
+        //MARK: Configuration for Enter Valid Mobile Label
         lblEnterValidMobile.TAText = "Please enter valid Mobile Number"
         lblEnterValidMobile.TATextFont = .systemFont(ofSize: 14, weight: .regular)
         lblEnterValidMobile.TATextColor = TAColor.validAuthColor
         
-        //MARK: valide Btn
+        //MARK: Configuration for valide Button
         btnValide.TABtnTitleText = "Validate"
         btnValide.TABtnTitleTextColor = TAColor.buttonTextColor
         btnValide.TABtnBackgrounColor = TAColor.buttonBackgroundColor
@@ -139,8 +136,8 @@ public class Mobile_Number:UIView {
         btnValide.TABtnCornerRadius = 5
         btnValide.TABtnMasksToBounds = true
         
-       
-        //MARK: Assign
+        
+        //MARK: Assign Value
         config.containerViewShow = containerView
         config.logoImage = imgLogo
         config.loginLbl = lblLogin
@@ -154,29 +151,28 @@ public class Mobile_Number:UIView {
         config.enterValidMobileNumber = lblEnterValidMobile
         config.validBtn = btnValide
         
-     
         return config
     }
     
     //MARK: Set Configurations
     public func setThemeWithMobileConfiguration(config:AuthenticationConfiguration){
-                
+        
         setThemsForHeaderViewImageORLogo(img: imgLogo, config: config.logoImage)
-
+        
         setThemsForLabel(lbl: lblLogin, config: config.loginLbl)
-
+        
         setThemsForLabel(lbl: lblMobile, config: config.mobileLbl)
         
         setThemsForView(view: viewTfMobileNumber, config: config.countryCodeView)
-
+        
         setThemsForView(view: viewCountryCode, config: config.countryCodeView)
-
+        
         setThemsForLabel(lbl: lblCountryCode, config: config.countryCountryLbl)
-
+        
         setThemsForLabel(lbl: lblIconCountryCode, config: config.countryCodeIcon)
-
+        
         setThemsForTextField(textfiled: tfMobileNumber, config: config.firstTextfiled)
-
+        
         setThemsForLabel(lbl:lblEnterValidMobNum , config: config.enterValidMobileNumber)
         
         setThemsForButton(btn: btnValidate, config: config.validBtn)
@@ -220,26 +216,22 @@ public class Mobile_Number:UIView {
         if validatePhone.1 == true {
             delegate?.sendPINAction(mobileNumber: tfMobileNumber.text ?? "")
         } else {
-//            if let topController = TopControllerManager.getTopViewController() {
-//                AlertManager.shared.showAlert(title: App_Alert_Title, msg: validatePhone.0, action: ok, viewController: topController)
-//
-//            }
             lblEnterValidMobNum.isHidden = false
         }
     }
     
     @IBAction func pickerViewBtn(_ sender: UIButton){
-       
-//        let picker = DataPickerClass()
-//        picker.title = "Country Code"
-//        picker.value = ""
-//        picker.dataArr = countryArray
-//
-//        let data = DataPickerController()
-//        data.dataObj = picker
-//        data.delegate = self
-//
-//        data.present(data, animated: false)
+        
+        //        let picker = DataPickerClass()
+        //        picker.title = "Country Code"
+        //        picker.value = ""
+        //        picker.dataArr = countryArray
+        //
+        //        let data = DataPickerController()
+        //        data.dataObj = picker
+        //        data.delegate = self
+        //
+        //        data.present(data, animated: false)
     }
 }
 
@@ -272,9 +264,3 @@ extension Mobile_Number:UITextFieldDelegate{
     }
 }
 
-//extension Mobile_Number: PassDataFromPickerProtocol{
-//    public func PassPickerData(pickerValue: String) {
-//
-//        print("PickerValue",pickerValue)
-//    }
-//}

@@ -28,13 +28,11 @@ public class AuthenticationConfiguration{
     public var countryCodeBtn = TAButton()
     public var color = TAColor()
     
-    
     //MARK: PIN variables
     public var pinDescription = TALable()
     public var PinLbl = TALable()
     public var enterValidPin = TALable()
     public var resendBtn = TAButton()
-    
     
     //MARK: Email Variables
     public var emailLbl = TALable()
@@ -43,16 +41,13 @@ public class AuthenticationConfiguration{
     public var passwordIcon = TALable()
     public var eyeIcon = TAButton()
     
-    
-    //MARK: MAobile Variables
+    //MARK: Mobile Variables
     public var mobileLbl = TALable()
     public var enterValidMobileNumber = TALable()
     public var countryCountryLbl = TALable()
     public var countryCodeView = TAUIView()
     public var countryCodeIcon = TALable()
 
-    
-    
     public var viewType: AuthType = .none
     
     public init() {}
@@ -61,6 +56,5 @@ public class AuthenticationConfiguration{
 //MARK: AuthType Enum
 public enum AuthType {
     case pinView, email, mobile, authLog, none
-    
 }
 

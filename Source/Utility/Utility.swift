@@ -6,7 +6,6 @@
 
 import Foundation
 
-
 //MARK: Constant Properties
 let Password_Minimun = 8
 let Password_Maximum = 24
@@ -55,19 +54,7 @@ public let msg_invalid_password = "please try to fil between 8 to 25 characters 
 //MARK: UIPicker (Country Dropdown)
 public let countryArray = ["+1","+44","+91"]
 
-//// MARK: Font Icons
-//let Icon_check = "\u{e900}"
-//let Icon_down_arrow = "\u{e901}"
-//let Icon_eye_off = "\u{e905}"
-//let Icon_eye = "\u{e906}"
-//let Icon_lock = "\u{e907}"
-//let Icon_mail = "\u{e908}"
-
-
-
-
-// MARK: Theme method's for UI Element's
-//MARK: HeaderView Logo
+//MARK: Image Logo Configuration
 public func setThemsForHeaderViewImageORLogo(img: UIImageView, config: TAImage){
     img.image = config.TAImageLogo
 }
@@ -81,37 +68,40 @@ public func setThemsForView(view:UIView, config:TAUIView){
 
 //MARK: Label Configuration
 public func setThemsForLabel(lbl:UILabel, config:TALable){
+    var lblHeight = AuthenticationLogIn()
     lbl.text = config.TAText
     lbl.textColor = config.TATextColor
     lbl.font = config.TATextFont
     lbl.numberOfLines = config.TATextNumberOfLines
     lbl.textAlignment = config.TATextAlignment
+    lblHeight.lblEnterValidEmailHeight.constant = 0
+    
 }
 
- //MARK: TextField Configuration
- public func setThemsForTextField(textfiled: UITextField, config:TATextFiled){
-     textfiled.placeholder = config.TATextfiledPlaceHolderText
-     textfiled.textColor = config.TATextfiledPlaceHolderTextColor
-     textfiled.font = config.TATextfiledPlaceHolderTextFont
- }
- 
- //MARK:  Button Configuration
- public func setThemsForButton(btn:UIButton, config:TAButton){
-     btn.setTitle(config.TABtnTitleText, for: .normal)
-     btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
-     btn.titleLabel?.font = config.TABtnTitleTextFont
-     btn.backgroundColor = config.TABtnBackgrounColor
-     btn.layer.cornerRadius = CGFloat(config.TABtnCornerRadius)
-     btn.layer.masksToBounds = config.TABtnMasksToBounds
- }
+//MARK: TextField Configuration
+public func setThemsForTextField(textfiled: UITextField, config:TATextFiled){
+    textfiled.placeholder = config.TATextfiledPlaceHolderText
+    textfiled.textColor = config.TATextfiledPlaceHolderTextColor
+    textfiled.font = config.TATextfiledPlaceHolderTextFont
+}
 
+//MARK:  Button Configuration
+public func setThemsForButton(btn:UIButton, config:TAButton){
+    btn.setTitle(config.TABtnTitleText, for: .normal)
+    btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
+    btn.titleLabel?.font = config.TABtnTitleTextFont
+    btn.backgroundColor = config.TABtnBackgrounColor
+    btn.layer.cornerRadius = CGFloat(config.TABtnCornerRadius)
+    btn.layer.masksToBounds = config.TABtnMasksToBounds
+}
 
+//MARK: Access Label Font Configuration
 public func setThemsForFont(FontClass:AnyClass){
     if let fontURL = Bundle(for: FontClass).url(forResource: "authentication_font_file", withExtension: "ttf"),
-        let fontData = try? Data(contentsOf: fontURL) as CFData,
-        let provider = CGDataProvider(data: fontData),
-        let font = CGFont(provider) {
-            var error: Unmanaged<CFError>?
+       let fontData = try? Data(contentsOf: fontURL) as CFData,
+       let provider = CGDataProvider(data: fontData),
+       let font = CGFont(provider) {
+        var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {
             let fontError = error?.takeRetainedValue()
             print("Failed to register font - \(fontError?.localizedDescription)")
@@ -119,13 +109,14 @@ public func setThemsForFont(FontClass:AnyClass){
     }
 }
 
+//MARK: Button Font Icon Configuration
 func AddFontIconToButton(btn : UIButton , titles : String , color:UIColor , size : CGFloat){
-       btn.titleLabel?.font = UIFont(name: "authentication_font_file", size: size)
-       btn.setTitleColor(color, for: .normal)
-       btn.setTitle(titles, for: .normal)
+    btn.titleLabel?.font = UIFont(name: "authentication_font_file", size: size)
+    btn.setTitleColor(color, for: .normal)
+    btn.setTitle(titles, for: .normal)
 }
 
-
+//MARK:  Label Font Icon Configuration
 func AddFontIconToLabel(lbl : UILabel , titles : String , color:UIColor , size : CGFloat){
     lbl.text = titles
     lbl.textColor = color

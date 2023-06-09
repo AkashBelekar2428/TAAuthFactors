@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 //MARK: ValidationClass 
 public class ValidationClass {
     
@@ -22,7 +21,6 @@ public class ValidationClass {
     }
     
     public func isEmailValid(email:String) -> (String,Bool){
-        
         let trimEmail = email.trimmingCharacters(in: .whitespacesAndNewlines)
         if trimEmail.isEmpty == false {
             let validateEmail = self.isValidEmail(email: email)
@@ -44,7 +42,6 @@ public class ValidationClass {
     }
     
     public func isPasswordValid(password:String) -> (String,Bool) {
-        
         let trimPassword = password.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if trimPassword.isEmpty == false{

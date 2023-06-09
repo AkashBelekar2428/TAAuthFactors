@@ -44,7 +44,6 @@ public class MiddleLayer : TAAuthProtocols {
         self.authenticateUrl = authenticateUrl
         self.startauthenticateUrl = startauthenticateUrl
         self.controller = controller
-        
     }
     
     //MARK: InitialAuthetication Method
@@ -110,10 +109,6 @@ public class MiddleLayer : TAAuthProtocols {
             hideLoader()
         }
     }
-    
-    
-    
-    
     
     //MARK: ConfigureTypesAndSetComponent
     private func ConfigureTypesAndSetComponent() {
@@ -244,11 +239,14 @@ public class MiddleLayer : TAAuthProtocols {
         return viewfactorwise
     }
     
+    
+    //MARK: Loader Show
     func showLoader(){
         SVProgressHUD.show()
         self.controller?.view.isUserInteractionEnabled = false
     }
     
+    //MARK: Loader Hide
     func hideLoader(){
         SVProgressHUD.dismiss()
         self.controller?.view.isUserInteractionEnabled = true

@@ -20,6 +20,7 @@ public class TAResendPINResponse:Mappable{
     var errors : [String] = []
     var validationErrors:[TAValidationtionErrorsResponse]!
     
+    //MARK: init
     public init() {}
     public required init?(map: Map) {}
     
@@ -41,6 +42,7 @@ public class TAValidationtionErrorsResponse:Mappable{
     var propertyName : String = ""
     var errorMessage : String = ""
     
+    //MARK: init
     public init() {}
     public required init?(map: Map) {}
     

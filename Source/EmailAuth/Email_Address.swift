@@ -25,7 +25,6 @@ public class Email_Address: UIView{
     @IBOutlet weak public var tfEmail:UITextField!
     @IBOutlet weak public var lblEnterValideEmail:UILabel!
     @IBOutlet weak public var btnValid:UIButton!
-   
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
 
     //MARK: Variables
@@ -35,7 +34,6 @@ public class Email_Address: UIView{
     public var emailConfig = AuthenticationConfiguration()
     lazy var  alert = AlertManager()
     public weak var controller: UIViewController?
-    
     
     //MARK: System methods
     required init?(coder aDecoder: NSCoder){
@@ -90,7 +88,7 @@ public class Email_Address: UIView{
         containerView.TAViewShadowRadius = 6
         containerView.TAViewHeight = 350
         
-        //MARK: Header Img Logo
+        //MARK: Configuration for Image Logo
         if let image = UIImage(named: "logo",in: Bundle(for:TAAssetsImage.self ),compatibleWith: nil){
             imgLogo.TAImageLogo = image
         }
@@ -101,37 +99,35 @@ public class Email_Address: UIView{
         lblLogin.TATextAlignment = .left
         lblLogin.TATextFont = .boldSystemFont(ofSize: 28)
         
-        //MARK: Txt
+        //MARK: Configuration for text
         lblEmail.TAText = "Email"
         lblEmail.TATextColor = TAColor.textLblColor
         lblEmail.TATextAlignment = .left
         lblEmail.TATextFont = .systemFont(ofSize: 14, weight: .medium)
         
-        
-        //MARK: View textfiled
+        //MARK: Configuration for Textfield View
         tfView.TAViewCornerRadius = 5
         tfView.TAViewborderWidth = 1
         tfView.TAViewBorderColor = TAColor.placeholderText_borderColor
         
-        
-        //MARK: Email Icon
+        //MARK: Configuration for Email Icon
         emailIcon.TAText = TAFontIcon.Icon_mail
         emailIcon.TATextColor = TAFontIcon.TATextColor
         emailIcon.TATextFont = UIFont(name: "authentication_font_file", size: 20)!
         
         
-        //MARK:  Textfiled
+        //MARK: Configuration for Textfiled
         textField.TATextfiledPlaceHolderText = "abc@yourdomain.com"
         textField.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
         textField.TATextfiledPlaceHolderTextFont = .systemFont(ofSize: 14, weight: .medium)
         
-        //MARK: Enter Valid Email
+        //MARK: Configuration for Enter Valid Email
         lblEnterEmailValid.TAText = "Please enter valid Email"
         lblEnterEmailValid.TATextColor = TAColor.validAuthColor
         lblEnterEmailValid.TATextAlignment = .left
         lblEnterEmailValid.TATextFont = .systemFont(ofSize: 14, weight: .regular)
         
-        //MARK: valide Btn
+        //MARK: Configuration for valide Button
         btnValid.TABtnTitleText = "Validate"
         btnValid.TABtnTitleTextColor = TAColor.buttonTextColor
         btnValid.TABtnBackgrounColor = TAColor.buttonBackgroundColor
@@ -149,8 +145,7 @@ public class Email_Address: UIView{
         config.enterValidEmail = lblEnterEmailValid
         config.validBtn = btnValid
         config.emailIcon = emailIcon
-        
-
+    
         return config
     }
     
@@ -185,8 +180,6 @@ public class Email_Address: UIView{
             
         }else{
             lblEnterValideEmail.isHidden = false
-//            let topController = TopControllerManager.getTopViewController()
-//            alert.showAlert(title: App_Alert_Title, msg:email.0, action: ok, viewController: topController!)
         }
     }
 }

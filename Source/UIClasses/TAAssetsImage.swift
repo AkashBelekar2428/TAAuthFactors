@@ -6,6 +6,9 @@
 //
 
 import Foundation
+
+//MARK: TAAssetsImage Class
 public class TAAssetsImage{
+    
     let images = UIImage(named: "logo") ?? UIImage()
 }

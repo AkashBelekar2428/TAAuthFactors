@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 //MARK: TALable Class
 public class TALable{
     
@@ -21,4 +20,5 @@ public class TALable{
     public var TATextCornerRadius: Int = 0
     public var TATextBorderWidth: Double = 0.0
     public var TATextBorderColor: UIColor = UIColor.gray
+    public var TATextHeight : Int = 0
 }
