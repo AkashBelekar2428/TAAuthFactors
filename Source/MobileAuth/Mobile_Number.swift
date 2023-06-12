@@ -28,14 +28,16 @@ public class Mobile_Number:UIView {
     @IBOutlet weak public var lblEnterValidMobNum:UILabel!
     @IBOutlet weak public var btnValidate:UIButton!
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
+    @IBOutlet weak public var lblEnterValidMobileHeight:NSLayoutConstraint!
+    @IBOutlet weak public var btnCountryCode:UIButton!
     
     //MARK: Variables
     let nibName = "Mobile_Number"
     public var delegate:MobileNumberDelegate?
     public var mobileConfig = AuthenticationConfiguration()
-    lazy var alert = AlertManager()
     public weak var controller: UIViewController?
     let pickerView = UIPickerView()
+        //let interaction = UIContextMenuInteraction(delegate: self())
     
     //MARK: System methods
     required init?(coder aDecoder: NSCoder){
@@ -84,16 +86,18 @@ public class Mobile_Number:UIView {
         }
         
         //MARK: Configuration for Login Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Bold")
         lblLogin.TAText = "Login"
         lblLogin.TATextColor = TAColor.textLblColor
         lblLogin.TATextAlignment = .left
-        lblLogin.TATextFont = .boldSystemFont(ofSize: 28)
+        lblLogin.TATextFont = TAFontIcon.TAFontBold
         
         //MARK: Configuration for Mobile Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         lblMobile.TAText = "Mobile"
         lblMobile.TATextColor = TAColor.textLblColor
         lblMobile.TATextAlignment = .left
-        lblMobile.TATextFont = .systemFont(ofSize: 14, weight: .medium)
+        lblMobile.TATextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for Mobile TextFiled View
         tfView.TAViewCornerRadius = 5
@@ -101,9 +105,10 @@ public class Mobile_Number:UIView {
         tfView.TAViewBorderColor = TAColor.shadowColor
         
         //MARK: Configuration for Country Code Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         lblCountryCode.TAText = "+91"
         lblCountryCode.TATextColor = TAColor.textLblColor
-        lblCountryCode.TATextFont = .systemFont(ofSize: 14, weight: .medium)
+        lblCountryCode.TATextFont = TAFontIcon.TAFontMedium
         lblCountryCode.TATextAlignment = .left
         lblCountryCode.TATextNumberOfLines = 0
         
@@ -113,9 +118,10 @@ public class Mobile_Number:UIView {
         lblCountryCodeIcon.TATextFont = UIFont(name: "authentication_font_file", size: 20)!
         
         //MARK: Configuration for Email Textfiled PlaceHolder
-        textField.TATextfiledPlaceHolderText = "123456789"
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
+        textField.TATextfiledPlaceHolderText = "1234 56 7890"
         textField.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
-        textField.TATextfiledPlaceHolderTextFont = .systemFont(ofSize: 14, weight: .medium)
+        textField.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for CountryCode View
         viewCountryCode.TAViewBorderColor = TAColor.placeholderText_borderColor
@@ -124,15 +130,17 @@ public class Mobile_Number:UIView {
         
         
         //MARK: Configuration for Enter Valid Mobile Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
         lblEnterValidMobile.TAText = "Please enter valid Mobile Number"
-        lblEnterValidMobile.TATextFont = .systemFont(ofSize: 14, weight: .regular)
+        lblEnterValidMobile.TATextFont = TAFontIcon.TAFontRegularErrMsg
         lblEnterValidMobile.TATextColor = TAColor.validAuthColor
         
         //MARK: Configuration for valide Button
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         btnValide.TABtnTitleText = "Validate"
         btnValide.TABtnTitleTextColor = TAColor.buttonTextColor
         btnValide.TABtnBackgrounColor = TAColor.buttonBackgroundColor
-        btnValide.TABtnTitleTextFont = .systemFont(ofSize: 14, weight: .medium)
+        btnValide.TABtnTitleTextFont = TAFontIcon.TAFontMedium
         btnValide.TABtnCornerRadius = 5
         btnValide.TABtnMasksToBounds = true
         
@@ -184,6 +192,7 @@ public class Mobile_Number:UIView {
         view.frame = self.bounds
         tfMobileNumber.delegate = self
         setupToolBar()
+    //    btnCountryCode.addInteraction(interaction)
         self.addSubview(view)
     }
     
@@ -213,26 +222,19 @@ public class Mobile_Number:UIView {
         
         let validatePhone = ValidationClass.shared.isPhoneValid(phone: phoneNumber)
         
-        if validatePhone.1 == true {
+        if validatePhone.1 == false{
+            lblEnterValidMobileHeight.constant = 15
+            lblEnterValidMobNum.text = validatePhone.0
+        }else{
+            lblEnterValidMobileHeight.constant = 0
             delegate?.sendPINAction(mobileNumber: tfMobileNumber.text ?? "")
-        } else {
-            lblEnterValidMobNum.isHidden = false
         }
     }
     
-    @IBAction func pickerViewBtn(_ sender: UIButton){
-        
-        //        let picker = DataPickerClass()
-        //        picker.title = "Country Code"
-        //        picker.value = ""
-        //        picker.dataArr = countryArray
-        //
-        //        let data = DataPickerController()
-        //        data.dataObj = picker
-        //        data.delegate = self
-        //
-        //        data.present(data, animated: false)
+    @IBAction func countryDropdown(_ sender:UIButton){
+        print("Picker")
     }
+    
 }
 
 //MARK: UITextFieldDelegate Extension
@@ -244,7 +246,6 @@ extension Mobile_Number:UITextFieldDelegate{
         return true
     }
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        lblEnterValidMobNum.isHidden = true
         return true
     }
     
@@ -264,3 +265,8 @@ extension Mobile_Number:UITextFieldDelegate{
     }
 }
 
+// extension Mobile_Number:UIContextMenuInteractionDelegate{
+//    public func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+//        <#code#>
+//    }
+//}

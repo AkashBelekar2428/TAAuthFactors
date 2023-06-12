@@ -27,6 +27,7 @@ public class PINView: UIView {
     @IBOutlet weak public var btnValidate:UIButton!
     @IBOutlet weak public var btnResendPin:UIButton!
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
+    @IBOutlet weak public var lblEnterValidPINHeight:NSLayoutConstraint!
     
     @IBOutlet weak public var bgViewVerifyPin: UIView!
     @IBOutlet weak public var pinVarTf: UITextField!
@@ -76,12 +77,12 @@ public class PINView: UIView {
         tolBar.setItems([flexSpac,doneBtn], animated: false)
         pinVarTf.inputAccessoryView = tolBar
         
-        txtFirst.textColor = .black
-        txtSecond.textColor = .black
-        txtthird.textColor = .black
-        txtFourth.textColor = .black
-        txtFifth.textColor = .black
-        txtSixth.textColor = .black
+        txtFirst.textColor = TAColor.pinTextColor
+        txtSecond.textColor = TAColor.pinTextColor
+        txtthird.textColor = TAColor.pinTextColor
+        txtFourth.textColor = TAColor.pinTextColor
+        txtFifth.textColor = TAColor.pinTextColor
+        txtSixth.textColor = TAColor.pinTextColor
         
         let lblArr = [txtFirst,txtSecond,txtthird,txtFourth,txtFifth,txtSixth]
         for lbl in lblArr {
@@ -280,43 +281,50 @@ public class PINView: UIView {
         }
         
         //MARK: Configuration for Login Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Bold")
         lblLogin.TAText = "Login"
         lblLogin.TATextColor = TAColor.textLblColor
-        lblLogin.TATextFont = .boldSystemFont(ofSize: 28)
+        lblLogin.TATextFont = TAFontIcon.TAFontBold
         lblLogin.TATextAlignment = .left
         lblLogin.TATextNumberOfLines = 0
         
-        //MARK: Configuration for TestFiled PlaceHolder
-        lblPinDescription.TAText = "Please enter your 6 Digit PIN"
-        lblPinDescription.TATextColor = TAColor.textLblColor
-        lblPinDescription.TATextAlignment = .left
-        lblPinDescription.TATextFont = .systemFont(ofSize: 14, weight: .regular)
-        
         //MARK: Configuration for PIN Txt Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         lblPIN.TAText = "PIN"
         lblPIN.TATextColor = TAColor.textLblColor
         lblPIN.TATextAlignment = .left
-        lblPIN.TATextFont = .systemFont(ofSize: 14, weight: .medium)
+        lblPIN.TATextFont = TAFontIcon.TAFontMedium
+        
+        //MARK: Configuration for TestFiled PlaceHolder
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
+        lblPinDescription.TAText = "Please enter your 6 Digit PIN"
+        lblPinDescription.TATextColor = TAColor.textLblColor
+        lblPinDescription.TATextAlignment = .left
+        lblPinDescription.TATextFont = TAFontIcon.TAFontRegular
+        
         
         //MARK: Configuration for Enter Valid PIN Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
         lblEnterValidPIN.TAText = "Please enter valid PIN"
         lblEnterValidPIN.TATextColor = TAColor.validAuthColor
         lblEnterValidPIN.TATextAlignment = .left
-        lblEnterValidPIN.TATextFont = .systemFont(ofSize: 13, weight: .regular)
+        lblEnterValidPIN.TATextFont = TAFontIcon.TAFontRegularErrMsg
         
         //MARK: Configuration for Valide Button
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         btnValid.TABtnTitleText = "Validate"
         btnValid.TABtnTitleTextColor = TAColor.buttonTextColor
         btnValid.TABtnBackgrounColor = TAColor.buttonBackgroundColor
-        btnValid.TABtnTitleTextFont = .systemFont(ofSize: 14, weight: .medium)
+        btnValid.TABtnTitleTextFont = TAFontIcon.TAFontMedium
         btnValid.TABtnCornerRadius = 5
         btnValid.TABtnMasksToBounds =  true
         
         //MARK: Configuration for Resend Button
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
         btnResend.TABtnTitleText = "Did not receive PIN? Resend"
         btnResend.TABtnTitleTextColor = TAColor.forgotButtonTitleColor
         btnResend.TABtnBackgrounColor = TAColor.buttonTextColor
-        btnResend.TABtnTitleTextFont = .systemFont(ofSize: 14, weight: .medium)
+        btnResend.TABtnTitleTextFont = TAFontIcon.TAFontRegular
         
         //MARK: Assign Values
         config.logoImage = imgLogo
@@ -358,10 +366,12 @@ public class PINView: UIView {
         
         let trimPIN = ValidationClass.shared.isPINValid(pin: pinValide!)
         
-        if trimPIN.1 == true{
-            delegate?.validateBtnAction(pinNumber: pinVarTf.text!)
+        if trimPIN.1 == false{
+            lblEnterValidPINHeight.constant = 15
+            lblEnterValidPIN.text = trimPIN.0
         }else{
-            lblEnterValidPIN.isHidden = false
+            lblEnterValidPINHeight.constant = 0
+            delegate?.validateBtnAction(pinNumber: pinVarTf.text ?? "")
         }
     }
     
@@ -483,8 +493,6 @@ extension PINView: UITextViewDelegate, UITextFieldDelegate {
             txtSixth.text = ""
             pinVarTf.text = ""
         }
-        lblEnterValidPIN.isHidden = true
-        
         return true
     }
 }

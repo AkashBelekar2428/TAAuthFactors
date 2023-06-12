@@ -7,37 +7,68 @@
 //
 
 import UIKit
+import ObjectMapper
+import SVProgressHUD
 import TAAuthFactors
 
-class ViewController: UIViewController {
-    
+class ViewController: UIViewController,TAMultiAuthFactorSuccess {
+   
+    var middleLayer : MiddleLayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        let authAuth = AuthenticationLogIn()
+    
+        let startAuthUrl = "https://ottr.chavadi.com/auth/api/v1/user/startauthentication"
+        let authUrl = "https://ottr.chavadi.com/auth/api/v1/user/authenticate"
+        
+        let service = APIServices.init()
+        self.middleLayer = MiddleLayer.init(webservice: service, authenticateUrl: authUrl, startauthenticateUrl: startAuthUrl, controller: self)
+        
+        let requestModel = TAAuthenticateStartRequest.init()
+        
+        let model = TAAuthenticateStartModelObj.init()
+      //  model.clientId = "7f627b8a-d174-4679-bb37-4414afd34ee2"
+        model.clientScope = "ottr-apis"
+        requestModel.model = model
+        
+        self.middleLayer?.delegate = self
+       self.middleLayer?.InitialAuthetication(startAuthModel: requestModel)
+        
+        var authAuth = AuthenticationLogIn()
         authAuth.controller = self
         authAuth.setDefaultThems()
         authAuth.frame = self.view.bounds
-        self.view.addSubview(authAuth)
-        
-        let authEmail = Email_Address()
+       // self.view.addSubview(authAuth)
+
+        var authEmail = Email_Address()
         authEmail.controller = self
         authEmail.setEmailDefaultThemes()
         authEmail.frame = self.view.bounds
-       // self.view.addSubview(authEmail)
-        //
-     
-        let authmob = Mobile_Number()
-        authmob.controller = self
-        authmob.setMobileDefaultThemes()
-        authmob.frame = self.view.bounds
-        // self.view.addSubview(authmob)
+        //self.view.addSubview(authEmail)
 
+        var authPIN = PINView()
+        authPIN.controller = self
+        authPIN.setPINDefaultThemes()
+        authPIN.frame = self.view.bounds
+       // self.view.addSubview(authPIN)
+
+        var authMob = Mobile_Number()
+        authMob.controller = self
+        authMob.setMobileDefaultThemes()
+        authMob.frame = self.view.bounds
+        self.view.addSubview(authMob)
         
-        let authPin = PINView()
-        authPin.controller = self
-        authPin.setPINDefaultThemes()
-        authPin.frame = self.view.bounds
-        //self.view.addSubview(authPin)    }
+        
     }
     
+    func TAAuthFactorCompletedWithToken(token: TAAuthGenericResponseTokenObj) {
+        print("Auth success with token =====> \(token.token)")
+        
+        let authSuccess = AuthenticationSuccess.init()
+        authSuccess.modalPresentationStyle = .fullScreen
+        present(authSuccess, animated: true)
+    }
+    
+
 }
+
+

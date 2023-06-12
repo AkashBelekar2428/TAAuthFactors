@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A1F35AD6D14187947AED8E1D /* Pods_TAAuthFactors_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6897F16E9F3766F0B4E939D8 /* Pods_TAAuthFactors_Example.framework */; };
+		AEF680622A36CF89009561BD /* AuthenticationSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF680602A36CF88009561BD /* AuthenticationSuccess.xib */; };
+		AEF680632A36CF89009561BD /* AuthenticationSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF680612A36CF88009561BD /* AuthenticationSuccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6897F16E9F3766F0B4E939D8 /* Pods_TAAuthFactors_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAAuthFactors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FE149167FB239E06D06D19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AEF680602A36CF88009561BD /* AuthenticationSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationSuccess.xib; sourceTree = "<group>"; };
+		AEF680612A36CF88009561BD /* AuthenticationSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSuccess.swift; sourceTree = "<group>"; };
 		F0E5DB8C391CE0BE0BC8C563 /* Pods-TAAuthFactors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAAuthFactors_Example.debug.xcconfig"; path = "Target Support Files/Pods-TAAuthFactors_Example/Pods-TAAuthFactors_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F5C3899B95BAB0E20BF8F686 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FBC8774E7DF8175FE506F127 /* TAAuthFactors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TAAuthFactors.podspec; path = ../TAAuthFactors.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -118,6 +122,8 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				AEF680612A36CF88009561BD /* AuthenticationSuccess.swift */,
+				AEF680602A36CF88009561BD /* AuthenticationSuccess.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for TAAuthFactors";
@@ -248,6 +254,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				AEF680622A36CF89009561BD /* AuthenticationSuccess.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				AEF680632A36CF89009561BD /* AuthenticationSuccess.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

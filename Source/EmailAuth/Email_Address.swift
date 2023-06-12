@@ -26,6 +26,7 @@ public class Email_Address: UIView{
     @IBOutlet weak public var lblEnterValideEmail:UILabel!
     @IBOutlet weak public var btnValid:UIButton!
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
+    @IBOutlet weak public var lblEnterValidEmailHeight:NSLayoutConstraint!
 
     //MARK: Variables
     let nibName = "Email_Address"
@@ -92,18 +93,20 @@ public class Email_Address: UIView{
         if let image = UIImage(named: "logo",in: Bundle(for:TAAssetsImage.self ),compatibleWith: nil){
             imgLogo.TAImageLogo = image
         }
-        
+
         //MARK: Configuration for Login
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Bold")
         lblLogin.TAText = "Login"
         lblLogin.TATextColor = TAColor.textLblColor
         lblLogin.TATextAlignment = .left
-        lblLogin.TATextFont = .boldSystemFont(ofSize: 28)
+        lblLogin.TATextFont = TAFontIcon.TAFontBold
         
         //MARK: Configuration for text
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         lblEmail.TAText = "Email"
         lblEmail.TATextColor = TAColor.textLblColor
         lblEmail.TATextAlignment = .left
-        lblEmail.TATextFont = .systemFont(ofSize: 14, weight: .medium)
+        lblEmail.TATextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for Textfield View
         tfView.TAViewCornerRadius = 5
@@ -117,21 +120,24 @@ public class Email_Address: UIView{
         
         
         //MARK: Configuration for Textfiled
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         textField.TATextfiledPlaceHolderText = "abc@yourdomain.com"
         textField.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
-        textField.TATextfiledPlaceHolderTextFont = .systemFont(ofSize: 14, weight: .medium)
+        textField.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for Enter Valid Email
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
         lblEnterEmailValid.TAText = "Please enter valid Email"
         lblEnterEmailValid.TATextColor = TAColor.validAuthColor
         lblEnterEmailValid.TATextAlignment = .left
-        lblEnterEmailValid.TATextFont = .systemFont(ofSize: 14, weight: .regular)
+        lblEnterEmailValid.TATextFont = TAFontIcon.TAFontRegularErrMsg
         
         //MARK: Configuration for valide Button
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         btnValid.TABtnTitleText = "Validate"
         btnValid.TABtnTitleTextColor = TAColor.buttonTextColor
         btnValid.TABtnBackgrounColor = TAColor.buttonBackgroundColor
-        btnValid.TABtnTitleTextFont = .systemFont(ofSize: 14, weight: .medium)
+        btnValid.TABtnTitleTextFont = TAFontIcon.TAFontMedium
         btnValid.TABtnCornerRadius = 5
         btnValid.TABtnMasksToBounds =  true
         
@@ -175,11 +181,12 @@ public class Email_Address: UIView{
         let emailValid = self.tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         let email = ValidationClass.shared.isEmailValid(email: emailValid)
         
-        if email.1 == true {
-            delegate?.sendPINBtnAction(email: tfEmail.text!)
-            
-        }else{
-            lblEnterValideEmail.isHidden = false
+        if email.1 == false{
+            lblEnterValidEmailHeight.constant = 10
+            lblEnterValideEmail.text = email.0
+        }else {
+            lblEnterValidEmailHeight.constant = 0
+            delegate?.sendPINBtnAction(email: tfEmail.text ?? "")
         }
     }
 }
@@ -192,7 +199,6 @@ extension Email_Address:UITextFieldDelegate{
     }
     
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        lblEnterValideEmail.isHidden = true
         return true
     }
 }

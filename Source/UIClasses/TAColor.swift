@@ -20,5 +20,6 @@ public class TAColor{
     public static let passwordEyeIconColor = UIColor(red: 183/255, green: 187/255, blue: 191/255, alpha: 1)
     public static let buttonTextColor = UIColor(red: 253/255, green: 253/255, blue: 253/255, alpha: 1)
     public static let shadowColor = UIColor(red: 208/255, green: 212/255, blue: 221/255, alpha: 1)
+    public static let pinTextColor = UIColor(red: 69/255, green: 70/255, blue: 77/255, alpha: 1)
 }
 

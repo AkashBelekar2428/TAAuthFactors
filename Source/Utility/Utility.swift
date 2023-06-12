@@ -68,13 +68,12 @@ public func setThemsForView(view:UIView, config:TAUIView){
 
 //MARK: Label Configuration
 public func setThemsForLabel(lbl:UILabel, config:TALable){
-    var lblHeight = AuthenticationLogIn()
     lbl.text = config.TAText
     lbl.textColor = config.TATextColor
     lbl.font = config.TATextFont
     lbl.numberOfLines = config.TATextNumberOfLines
     lbl.textAlignment = config.TATextAlignment
-    lblHeight.lblEnterValidEmailHeight.constant = 0
+    //lbl.lineBreakMode = config.TATextLineBreakMode
     
 }
 
@@ -122,3 +121,17 @@ func AddFontIconToLabel(lbl : UILabel , titles : String , color:UIColor , size :
     lbl.textColor = color
     lbl.font = UIFont(name: "authentication_font_file", size: size)
 }
+
+public func setThemsForFontLabel(FontClass:AnyClass,Font:String){
+    if let fontURL = Bundle(for: FontClass).url(forResource: Font, withExtension: "ttf"),
+       let fontData = try? Data(contentsOf: fontURL) as CFData,
+       let provider = CGDataProvider(data: fontData),
+       let font = CGFont(provider) {
+        var error: Unmanaged<CFError>?
+        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+            let fontError = error?.takeRetainedValue()
+            print("Failed to register font - \(fontError?.localizedDescription)")
+        }
+    }
+}
+

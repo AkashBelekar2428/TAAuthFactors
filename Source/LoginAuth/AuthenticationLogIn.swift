@@ -35,14 +35,14 @@ public class AuthenticationLogIn: UIView{
     @IBOutlet weak public var viewContainerHeight: NSLayoutConstraint!
     @IBOutlet weak public var lblEnterValidEmailHeight: NSLayoutConstraint!
     @IBOutlet weak public var lblEnterValidPasswordHeight: NSLayoutConstraint!
-   
+    
     //MARK: Variables
     let nibName = "AuthenticationLogIn"
     public var delegate:AuthenticationLogInDelegate?
     public var authConfig = AuthenticationConfiguration()
     
     public weak var controller: UIViewController?
-    var authType : TAAuthFactorType = .NONE
+    public  var authType : TAAuthFactorType = .NONE
     var didTap = false
     
     
@@ -100,7 +100,13 @@ public class AuthenticationLogIn: UIView{
         
         //MARK: Configuration for Icons
         setThemsForFont(FontClass: TAFontIcon.self)
-        emailIcon.TAText = authType == .USERNAME_PASSWORD ? TAFontIcon.Icon_user  : TAFontIcon.Icon_mail
+        
+        if  authType == .USERNAME_PASSWORD {
+            emailIcon.TAText =  TAFontIcon.Icon_user
+        }  else{
+            emailIcon.TAText = TAFontIcon.Icon_mail
+        }
+        
         emailIcon.TATextColor = TAFontIcon.TATextColor
         emailIcon.TATextFont = UIFont(name: "authentication_font_file", size: 20)!
         
@@ -122,45 +128,50 @@ public class AuthenticationLogIn: UIView{
         }
         
         //MARK: Configuration for Login Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Bold")
         lblLogin.TAText = "Login"
         lblLogin.TATextColor = TAColor.textLblColor
-        lblLogin.TATextFont = .boldSystemFont(ofSize: 28)
         lblLogin.TATextAlignment = .left
         lblLogin.TATextNumberOfLines = 0
+        lblLogin.TATextFont = TAFontIcon.TAFontBold
         
         //MARK: Configuration for Email Label
-        lblAuthType.TAText = "Email"
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
+        if authType == .USERNAME_PASSWORD{
+            lblAuthType.TAText = "Username"
+        }else{
+            lblAuthType.TAText = "Email"
+        }
         lblAuthType.TATextColor = TAColor.textLblColor
-        lblAuthType.TATextFont = .systemFont(ofSize: 14, weight: .medium)
+        lblAuthType.TATextFont =  TAFontIcon.TAFontMedium
         lblAuthType.TATextAlignment = .left
         lblAuthType.TATextNumberOfLines = 0
         
         //MARK: Configuration for Password Label
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         lblPassword.TAText = "Password"
         lblPassword.TATextColor = TAColor.textLblColor
-        lblPassword.TATextFont = .systemFont(ofSize: 14, weight: .medium)
+        lblPassword.TATextFont = TAFontIcon.TAFontMedium
         lblPassword.TATextAlignment = .left
         lblPassword.TATextNumberOfLines = 0
         
         //MARK: Configuration for Enter Valid Email Label
-        lblEnterValidEmail.TAText = "Please enter valid Email"
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
+        lblEnterValidEmail.TAText = ""
         lblEnterValidEmail.TATextColor = TAColor.validAuthColor
-        lblEnterValidEmail.TATextFont = .systemFont(ofSize: 13)
+        lblEnterValidEmail.TATextFont = TAFontIcon.TAFontRegularErrMsg
         lblEnterValidEmail.TATextAlignment = .left
         lblEnterValidEmail.TATextNumberOfLines = 0
-        lblEnterValidEmail.TATextHeight = 0
-        lblEnterValidEmail.TATextHeight = 0
-        
-        
-        
+     
         //MARK: Configuration for Enter Valid Password Lebel
-        lblEnterValidPassword.TAText = "Please enter valid Password"
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
+        lblEnterValidPassword.TAText = ""
         lblEnterValidPassword.TATextColor = TAColor.validAuthColor
-        lblEnterValidPassword.TATextFont = .systemFont(ofSize: 13)
+        lblEnterValidPassword.TATextFont =  TAFontIcon.TAFontRegularErrMsg
         lblEnterValidPassword.TATextAlignment = .left
-        lblEnterValidPassword.TATextNumberOfLines = 0        
+        lblEnterValidPassword.TATextNumberOfLines = 0
+       // lblEnterValidPassword.TATextLineBreakMode = .byWordWrapping
         
-
         //MARK: Configuration for tfView
         viewTestfiled.TAViewCornerRadius = 5
         viewTestfiled.TAViewborderWidth = 1
@@ -168,27 +179,36 @@ public class AuthenticationLogIn: UIView{
   
         
         //MARK: Configuration for Textfiled placeHolder
-        tfFirst.TATextfiledPlaceHolderText = "abc@yourdomain.com"
-        tfFirst.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
-        tfFirst.TATextfiledPlaceHolderTextFont = .systemFont(ofSize: 14, weight: .medium)
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
+        
+        if  authType == .USERNAME_PASSWORD {
+            tfFirst.TATextfiledPlaceHolderText = "abc"
+        }  else{
+            tfFirst.TATextfiledPlaceHolderText = "abc@yourdomain.com"
+        }
+        
+        tfFirst.TATextfiledPlaceHolderTextColor = .black
+        tfFirst.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for Password Textfiled placeHolder
         tfSecond.TATextfiledPlaceHolderText = "********"
-        tfSecond.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
-        tfSecond.TATextfiledPlaceHolderTextFont = .systemFont(ofSize: 14, weight: .medium)
+        tfSecond.TATextfiledPlaceHolderTextColor = .black
+        tfSecond.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
       
         //MARK: Configuration for ForgotPassword Button
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
         btnForgotPassword.TABtnTitleText = "Forgot Password?"
         btnForgotPassword.TABtnTitleTextColor = TAColor.forgotButtonTitleColor
-        btnForgotPassword.TABtnTitleTextFont = .systemFont(ofSize: 14, weight: .medium)
+        btnForgotPassword.TABtnTitleTextFont = TAFontIcon.TAFontRegular
         btnForgotPassword.TABtnBackgrounColor = .white
         
         
         //MARK: Configuration for Validate Buttun
+        setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         btnValid.TABtnTitleText = "Validate"
         btnValid.TABtnTitleTextColor = TAColor.buttonTextColor
-        btnValid.TABtnTitleTextFont = .systemFont(ofSize: 14, weight: .medium)
+        btnValid.TABtnTitleTextFont = TAFontIcon.TAFontMedium
         btnValid.TABtnBackgrounColor = TAColor.buttonBackgroundColor
         btnValid.TABtnCornerRadius = 5
         
@@ -266,14 +286,23 @@ public class AuthenticationLogIn: UIView{
             let username = ValidationClass.shared.isUsernameValid(username: tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "")
             let password = ValidationClass.shared.isPasswordValid(password: tfPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "")
             
-            if username.1 == true {
-                if password.1 == true {
-                    delegate?.sendPinBtnAction(email: tfEmail.text ?? "", password: tfPassword.text ?? "")
-                } else {
-                    lblEnterValidPasswordHeight.constant = 10
-                }
-            } else {
+            if username.1 == false && password.1 == false{
+                lblEnterValidAuth.text = username.0
+                lblEnterValidePassword.text = password.0
                 lblEnterValidEmailHeight.constant = 10
+                lblEnterValidPasswordHeight.constant = 10
+            } else if username.1 == false{
+                lblEnterValidAuth.text = username.0
+                lblEnterValidEmailHeight.constant = 10
+            }else if password.1 == false{
+                lblEnterValidEmailHeight.constant = 0
+                lblEnterValidePassword.text = password.0
+                lblEnterValidPasswordHeight.constant = 0
+            }else if username.1 == true && password.1 == true{
+                lblEnterValidPasswordHeight.constant = 0
+                lblEnterValidAuth.text = ""
+                lblEnterValidePassword.text = ""
+                delegate?.sendPinBtnAction(email: tfEmail.text ?? "", password: tfPassword.text ?? "")
             }
             
         } else {
@@ -282,15 +311,24 @@ public class AuthenticationLogIn: UIView{
             let email = ValidationClass.shared.isEmailValid(email: tfEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "")
             let password = ValidationClass.shared.isPasswordValid(password: tfPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "")
             
-            if email.1 == true {
-                if password.1 == true {
-                    delegate?.sendPinBtnAction(email: tfEmail.text ?? "", password: tfPassword.text ?? "")
-                } else {
-                    
-                    lblEnterValidPasswordHeight.constant = 10
-                }
-            } else {
+            if email.1 == false && password.1 == false {
+                lblEnterValidAuth.text = email.0
+                lblEnterValidePassword.text = password.0
                 lblEnterValidEmailHeight.constant = 10
+                lblEnterValidPasswordHeight.constant = 10
+            } else if email.1 == false {
+                lblEnterValidEmailHeight.constant = 10
+                lblEnterValidAuth.text = email.0
+            } else if password.1 == false {
+                lblEnterValidEmailHeight.constant = 0
+                lblEnterValidPasswordHeight.constant = 10
+                lblEnterValidePassword.text = password.0
+            } else if email.1 == true && password.1 == true{
+                lblEnterValidPasswordHeight.constant = 0
+                lblEnterValidEmailHeight.constant = 0
+                lblEnterValidAuth.text = ""
+                lblEnterValidePassword.text = ""
+                delegate?.sendPinBtnAction(email: tfEmail.text ?? "", password: tfPassword.text ?? "")
             }
         }
     }
@@ -299,11 +337,11 @@ public class AuthenticationLogIn: UIView{
         
         if tfPassword.isSecureTextEntry {
             setThemsForFont(FontClass: TAFontIcon.self)
-            AddFontIconToButton(btn: btnEyeIcon, titles: TAFontIcon.Icon_eye, color: TAColor.iconColor, size: 20)
+            AddFontIconToButton(btn: btnEyeIcon, titles: TAFontIcon.Icon_eye, color: TAColor.passwordEyeIconColor, size: 20)
 
         }else{
             setThemsForFont(FontClass: TAFontIcon.self)
-            AddFontIconToButton(btn: btnEyeIcon, titles: TAFontIcon.Icon_eye_off, color: TAColor.iconColor, size: 20)
+            AddFontIconToButton(btn: btnEyeIcon, titles: TAFontIcon.Icon_eye_off, color: TAColor.passwordEyeIconColor, size: 20)
         }
         tfPassword.isSecureTextEntry = !tfPassword.isSecureTextEntry
     }
@@ -320,9 +358,6 @@ extension AuthenticationLogIn:UITextFieldDelegate{
         return true
     }
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        lblEnterValidEmailHeight.constant = 0
-        lblEnterValidPasswordHeight.constant = 0
-    
         return true
     }
 }

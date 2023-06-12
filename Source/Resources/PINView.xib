@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PINView" customModule="MFUIAthentication" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PINView" customModule="TAAuthFactors" customModuleProvider="target">
             <connections>
                 <outlet property="bgViewVerifyPin" destination="qh7-XP-0Sl" id="jrn-vV-YpY"/>
                 <outlet property="btnResendPin" destination="hgV-u0-0vU" id="7O5-VT-8JA"/>
@@ -17,6 +17,7 @@
                 <outlet property="btnVerifyTextField" destination="qh7-XP-0Sl" id="Uaf-s2-vdI"/>
                 <outlet property="imgLogo" destination="uYo-8v-G4m" id="EWq-r6-OIf"/>
                 <outlet property="lblEnterValidPIN" destination="26y-Df-6gg" id="VPb-tW-YBI"/>
+                <outlet property="lblEnterValidPINHeight" destination="cRl-kP-eo2" id="9dd-tO-7r9"/>
                 <outlet property="lblLogin" destination="8WN-hu-OrW" id="ykX-ia-cc6"/>
                 <outlet property="lblPin" destination="rd8-bR-ACG" id="GLz-si-eR7"/>
                 <outlet property="lblPinDescription" destination="Rg1-Fa-3Iw" id="sY7-Mt-8qb"/>
@@ -37,35 +38,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-XQ-SmJ">
-                    <rect key="frame" x="30" y="59" width="481" height="450"/>
+                    <rect key="frame" x="30" y="79" width="481" height="450"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-8v-G4m">
-                            <rect key="frame" x="0.0" y="20" width="150" height="50"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-8v-G4m">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Sab-zV-NES"/>
-                                <constraint firstAttribute="height" constant="50" id="aSy-C2-MPT"/>
+                                <constraint firstAttribute="height" constant="30" id="aSy-C2-MPT"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WN-hu-OrW" userLabel="login">
-                            <rect key="frame" x="0.0" y="95" width="481" height="0.0"/>
+                            <rect key="frame" x="0.0" y="55" width="481" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-Fa-3Iw" userLabel="please enter 6 digit pin">
-                            <rect key="frame" x="0.0" y="110" width="481" height="0.0"/>
+                            <rect key="frame" x="0.0" y="70" width="481" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-bR-ACG" userLabel="PIN">
-                            <rect key="frame" x="0.0" y="135" width="481" height="0.0"/>
+                            <rect key="frame" x="0.0" y="95" width="481" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-bd-xOM">
-                            <rect key="frame" x="0.0" y="145" width="481" height="50"/>
+                            <rect key="frame" x="0.0" y="105" width="481" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Q-yy-CvL">
                                     <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
@@ -195,14 +196,17 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26y-Df-6gg" userLabel="Please enter valid PIN">
-                            <rect key="frame" x="0.0" y="205" width="481" height="0.0"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26y-Df-6gg" userLabel="Please enter valid PIN">
+                            <rect key="frame" x="0.0" y="165" width="481" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="cRl-kP-eo2"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tE-LU-Dcx" userLabel="valid">
-                            <rect key="frame" x="0.0" y="220" width="481" height="50"/>
+                            <rect key="frame" x="0.0" y="185" width="481" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="bI1-Qg-K2Y"/>
                             </constraints>
@@ -212,7 +216,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-u0-0vU" userLabel="resend">
-                            <rect key="frame" x="0.0" y="285" width="481" height="30"/>
+                            <rect key="frame" x="0.0" y="250" width="481" height="30"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <connections>
                                 <action selector="didnotReceivePINAction:" destination="-1" eventType="touchUpInside" id="QC3-gv-uVK"/>
@@ -228,7 +232,7 @@
                         <constraint firstItem="hgV-u0-0vU" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="H3r-qa-k63"/>
                         <constraint firstItem="uYo-8v-G4m" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="ICS-eQ-TCW"/>
                         <constraint firstItem="hgV-u0-0vU" firstAttribute="top" secondItem="3tE-LU-Dcx" secondAttribute="bottom" constant="15" id="Ist-Vt-OmB"/>
-                        <constraint firstItem="3tE-LU-Dcx" firstAttribute="top" secondItem="26y-Df-6gg" secondAttribute="bottom" constant="15" id="NTC-v6-lqh"/>
+                        <constraint firstItem="3tE-LU-Dcx" firstAttribute="top" secondItem="26y-Df-6gg" secondAttribute="bottom" constant="20" id="NTC-v6-lqh"/>
                         <constraint firstItem="8WN-hu-OrW" firstAttribute="top" secondItem="uYo-8v-G4m" secondAttribute="bottom" constant="25" id="Pae-v9-nMW"/>
                         <constraint firstItem="8WN-hu-OrW" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="UvQ-KU-PiC"/>
                         <constraint firstAttribute="trailing" secondItem="26y-Df-6gg" secondAttribute="trailing" id="VnD-KD-kdd"/>
@@ -244,7 +248,7 @@
                         <constraint firstItem="rd8-bR-ACG" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="nal-lB-Bfk"/>
                         <constraint firstItem="rd8-bR-ACG" firstAttribute="top" secondItem="Rg1-Fa-3Iw" secondAttribute="bottom" constant="25" id="oRD-UD-9h0"/>
                         <constraint firstItem="26y-Df-6gg" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="rG6-uf-bV2"/>
-                        <constraint firstItem="uYo-8v-G4m" firstAttribute="top" secondItem="RpR-XQ-SmJ" secondAttribute="top" constant="20" id="wmW-wR-5LV"/>
+                        <constraint firstItem="uYo-8v-G4m" firstAttribute="top" secondItem="RpR-XQ-SmJ" secondAttribute="top" id="wmW-wR-5LV"/>
                     </constraints>
                 </view>
             </subviews>
@@ -252,11 +256,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="RpR-XQ-SmJ" firstAttribute="leading" secondItem="XZd-E3-gfS" secondAttribute="leading" constant="30" id="LmU-jR-hIl"/>
-                <constraint firstItem="RpR-XQ-SmJ" firstAttribute="top" secondItem="XZd-E3-gfS" secondAttribute="top" id="Z2b-Da-2Rd"/>
+                <constraint firstItem="RpR-XQ-SmJ" firstAttribute="top" secondItem="XZd-E3-gfS" secondAttribute="top" constant="20" id="Z2b-Da-2Rd"/>
                 <constraint firstItem="XZd-E3-gfS" firstAttribute="trailing" secondItem="RpR-XQ-SmJ" secondAttribute="trailing" constant="30" id="ceJ-b6-0NN"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-47" y="639"/>
+            <point key="canvasLocation" x="-48.091603053435115" y="638.38028169014092"/>
         </view>
     </objects>
     <resources>
