@@ -295,17 +295,17 @@ public class PINView: UIView {
         lblPIN.TATextAlignment = .left
         lblPIN.TATextFont = TAFontIcon.TAFontMedium
         
-        //MARK: Configuration for TestFiled PlaceHolder
+        //MARK: Configuration for PIN Description
         setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
-        lblPinDescription.TAText = "Please enter your 6 Digit PIN"
+        lblPinDescription.TAText = "We sent message to Last digit of mobile number 0186"
         lblPinDescription.TATextColor = TAColor.textLblColor
         lblPinDescription.TATextAlignment = .left
         lblPinDescription.TATextFont = TAFontIcon.TAFontRegular
-        
+        lblPinDescription.TATextNumberOfLines = 0
         
         //MARK: Configuration for Enter Valid PIN Label
         setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
-        lblEnterValidPIN.TAText = "Please enter valid PIN"
+        lblEnterValidPIN.TAText = ""
         lblEnterValidPIN.TATextColor = TAColor.validAuthColor
         lblEnterValidPIN.TATextAlignment = .left
         lblEnterValidPIN.TATextFont = TAFontIcon.TAFontRegularErrMsg
@@ -367,10 +367,9 @@ public class PINView: UIView {
         let trimPIN = ValidationClass.shared.isPINValid(pin: pinValide!)
         
         if trimPIN.1 == false{
-            lblEnterValidPINHeight.constant = 15
             lblEnterValidPIN.text = trimPIN.0
         }else{
-            lblEnterValidPINHeight.constant = 0
+            lblEnterValidPIN.text = ""
             delegate?.validateBtnAction(pinNumber: pinVarTf.text ?? "")
         }
     }

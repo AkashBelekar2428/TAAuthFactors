@@ -40,10 +40,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-XQ-SmJ">
                     <rect key="frame" x="30" y="79" width="481" height="450"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-8v-G4m">
-                            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-8v-G4m">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="Sab-zV-NES"/>
+                                <constraint firstAttribute="width" constant="120" id="Sab-zV-NES"/>
                                 <constraint firstAttribute="height" constant="30" id="aSy-C2-MPT"/>
                             </constraints>
                         </imageView>
@@ -55,18 +55,21 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-Fa-3Iw" userLabel="please enter 6 digit pin">
                             <rect key="frame" x="0.0" y="70" width="481" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="MdN-yu-kFe"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-bR-ACG" userLabel="PIN">
-                            <rect key="frame" x="0.0" y="95" width="481" height="0.0"/>
+                            <rect key="frame" x="0.0" y="90" width="481" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-bd-xOM">
-                            <rect key="frame" x="0.0" y="105" width="481" height="50"/>
+                            <rect key="frame" x="0.0" y="100" width="481" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Q-yy-CvL">
                                     <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
@@ -197,16 +200,16 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26y-Df-6gg" userLabel="Please enter valid PIN">
-                            <rect key="frame" x="0.0" y="165" width="481" height="0.0"/>
+                            <rect key="frame" x="0.0" y="157" width="481" height="0.0"/>
                             <constraints>
-                                <constraint firstAttribute="height" id="cRl-kP-eo2"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cRl-kP-eo2"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tE-LU-Dcx" userLabel="valid">
-                            <rect key="frame" x="0.0" y="185" width="481" height="50"/>
+                            <rect key="frame" x="0.0" y="172" width="481" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="bI1-Qg-K2Y"/>
                             </constraints>
@@ -216,7 +219,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-u0-0vU" userLabel="resend">
-                            <rect key="frame" x="0.0" y="250" width="481" height="30"/>
+                            <rect key="frame" x="0.0" y="232" width="481" height="30"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <connections>
                                 <action selector="didnotReceivePINAction:" destination="-1" eventType="touchUpInside" id="QC3-gv-uVK"/>
@@ -231,8 +234,8 @@
                         <constraint firstAttribute="height" constant="450" id="GdG-Ae-bri"/>
                         <constraint firstItem="hgV-u0-0vU" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="H3r-qa-k63"/>
                         <constraint firstItem="uYo-8v-G4m" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="ICS-eQ-TCW"/>
-                        <constraint firstItem="hgV-u0-0vU" firstAttribute="top" secondItem="3tE-LU-Dcx" secondAttribute="bottom" constant="15" id="Ist-Vt-OmB"/>
-                        <constraint firstItem="3tE-LU-Dcx" firstAttribute="top" secondItem="26y-Df-6gg" secondAttribute="bottom" constant="20" id="NTC-v6-lqh"/>
+                        <constraint firstItem="hgV-u0-0vU" firstAttribute="top" secondItem="3tE-LU-Dcx" secondAttribute="bottom" constant="10" id="Ist-Vt-OmB"/>
+                        <constraint firstItem="3tE-LU-Dcx" firstAttribute="top" secondItem="26y-Df-6gg" secondAttribute="bottom" constant="15" id="NTC-v6-lqh"/>
                         <constraint firstItem="8WN-hu-OrW" firstAttribute="top" secondItem="uYo-8v-G4m" secondAttribute="bottom" constant="25" id="Pae-v9-nMW"/>
                         <constraint firstItem="8WN-hu-OrW" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="UvQ-KU-PiC"/>
                         <constraint firstAttribute="trailing" secondItem="26y-Df-6gg" secondAttribute="trailing" id="VnD-KD-kdd"/>
@@ -244,9 +247,9 @@
                         <constraint firstAttribute="trailing" secondItem="Rg1-Fa-3Iw" secondAttribute="trailing" id="gHY-EL-xfi"/>
                         <constraint firstAttribute="trailing" secondItem="3tE-LU-Dcx" secondAttribute="trailing" id="hGJ-ra-09i"/>
                         <constraint firstAttribute="trailing" secondItem="rd8-bR-ACG" secondAttribute="trailing" id="jjp-7S-vfq"/>
-                        <constraint firstItem="26y-Df-6gg" firstAttribute="top" secondItem="YzQ-bd-xOM" secondAttribute="bottom" constant="10" id="n3f-vA-B6E"/>
+                        <constraint firstItem="26y-Df-6gg" firstAttribute="top" secondItem="YzQ-bd-xOM" secondAttribute="bottom" constant="7" id="n3f-vA-B6E"/>
                         <constraint firstItem="rd8-bR-ACG" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="nal-lB-Bfk"/>
-                        <constraint firstItem="rd8-bR-ACG" firstAttribute="top" secondItem="Rg1-Fa-3Iw" secondAttribute="bottom" constant="25" id="oRD-UD-9h0"/>
+                        <constraint firstItem="rd8-bR-ACG" firstAttribute="top" secondItem="Rg1-Fa-3Iw" secondAttribute="bottom" constant="20" id="oRD-UD-9h0"/>
                         <constraint firstItem="26y-Df-6gg" firstAttribute="leading" secondItem="RpR-XQ-SmJ" secondAttribute="leading" id="rG6-uf-bV2"/>
                         <constraint firstItem="uYo-8v-G4m" firstAttribute="top" secondItem="RpR-XQ-SmJ" secondAttribute="top" id="wmW-wR-5LV"/>
                     </constraints>

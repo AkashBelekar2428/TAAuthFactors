@@ -26,7 +26,7 @@ class ViewController: UIViewController,TAMultiAuthFactorSuccess {
         let requestModel = TAAuthenticateStartRequest.init()
         
         let model = TAAuthenticateStartModelObj.init()
-      //  model.clientId = "7f627b8a-d174-4679-bb37-4414afd34ee2"
+       // model.clientId = "7f627b8a-d174-4679-bb37-4414afd34ee2"
         model.clientScope = "ottr-apis"
         requestModel.model = model
         
@@ -37,25 +37,26 @@ class ViewController: UIViewController,TAMultiAuthFactorSuccess {
         authAuth.controller = self
         authAuth.setDefaultThems()
         authAuth.frame = self.view.bounds
-       // self.view.addSubview(authAuth)
+      //  self.view.addSubview(authAuth)
 
         var authEmail = Email_Address()
         authEmail.controller = self
         authEmail.setEmailDefaultThemes()
         authEmail.frame = self.view.bounds
-        //self.view.addSubview(authEmail)
+       // self.view.addSubview(authEmail)
 
-        var authPIN = PINView()
-        authPIN.controller = self
-        authPIN.setPINDefaultThemes()
-        authPIN.frame = self.view.bounds
-       // self.view.addSubview(authPIN)
 
         var authMob = Mobile_Number()
         authMob.controller = self
         authMob.setMobileDefaultThemes()
         authMob.frame = self.view.bounds
-        self.view.addSubview(authMob)
+       // self.view.addSubview(authMob)
+        
+        var authPIN = PINView()
+        authPIN.controller = self
+        authPIN.setPINDefaultThemes()
+        authPIN.frame = self.view.bounds
+        self.view.addSubview(authPIN)
         
         
     }

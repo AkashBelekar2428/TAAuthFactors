@@ -120,7 +120,7 @@ public class Mobile_Number:UIView {
         //MARK: Configuration for Email Textfiled PlaceHolder
         setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Medium")
         textField.TATextfiledPlaceHolderText = "1234 56 7890"
-        textField.TATextfiledPlaceHolderTextColor = TAColor.textLblColor
+        textField.TATextfiledPlaceHolderTextColor = TAColor.pinTextColor
         textField.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for CountryCode View
@@ -131,7 +131,7 @@ public class Mobile_Number:UIView {
         
         //MARK: Configuration for Enter Valid Mobile Label
         setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
-        lblEnterValidMobile.TAText = "Please enter valid Mobile Number"
+        lblEnterValidMobile.TAText = ""
         lblEnterValidMobile.TATextFont = TAFontIcon.TAFontRegularErrMsg
         lblEnterValidMobile.TATextColor = TAColor.validAuthColor
         
@@ -223,10 +223,9 @@ public class Mobile_Number:UIView {
         let validatePhone = ValidationClass.shared.isPhoneValid(phone: phoneNumber)
         
         if validatePhone.1 == false{
-            lblEnterValidMobileHeight.constant = 15
             lblEnterValidMobNum.text = validatePhone.0
         }else{
-            lblEnterValidMobileHeight.constant = 0
+            lblEnterValidMobNum.text = ""
             delegate?.sendPINAction(mobileNumber: tfMobileNumber.text ?? "")
         }
     }

@@ -186,13 +186,12 @@ public class AuthenticationLogIn: UIView{
         }  else{
             tfFirst.TATextfiledPlaceHolderText = "abc@yourdomain.com"
         }
-        
-        tfFirst.TATextfiledPlaceHolderTextColor = .black
+        tfFirst.TATextfiledPlaceHolderTextColor = TAColor.pinTextColor
         tfFirst.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
         //MARK: Configuration for Password Textfiled placeHolder
         tfSecond.TATextfiledPlaceHolderText = "********"
-        tfSecond.TATextfiledPlaceHolderTextColor = .black
+        tfSecond.TATextfiledPlaceHolderTextColor = TAColor.pinTextColor
         tfSecond.TATextfiledPlaceHolderTextFont = TAFontIcon.TAFontMedium
         
       
@@ -289,17 +288,16 @@ public class AuthenticationLogIn: UIView{
             if username.1 == false && password.1 == false{
                 lblEnterValidAuth.text = username.0
                 lblEnterValidePassword.text = password.0
-                lblEnterValidEmailHeight.constant = 10
-                lblEnterValidPasswordHeight.constant = 10
+           
             } else if username.1 == false{
                 lblEnterValidAuth.text = username.0
-                lblEnterValidEmailHeight.constant = 10
+               
             }else if password.1 == false{
-                lblEnterValidEmailHeight.constant = 0
+            
                 lblEnterValidePassword.text = password.0
-                lblEnterValidPasswordHeight.constant = 0
+              
             }else if username.1 == true && password.1 == true{
-                lblEnterValidPasswordHeight.constant = 0
+            
                 lblEnterValidAuth.text = ""
                 lblEnterValidePassword.text = ""
                 delegate?.sendPinBtnAction(email: tfEmail.text ?? "", password: tfPassword.text ?? "")
@@ -314,18 +312,12 @@ public class AuthenticationLogIn: UIView{
             if email.1 == false && password.1 == false {
                 lblEnterValidAuth.text = email.0
                 lblEnterValidePassword.text = password.0
-                lblEnterValidEmailHeight.constant = 10
-                lblEnterValidPasswordHeight.constant = 10
             } else if email.1 == false {
-                lblEnterValidEmailHeight.constant = 10
                 lblEnterValidAuth.text = email.0
             } else if password.1 == false {
-                lblEnterValidEmailHeight.constant = 0
-                lblEnterValidPasswordHeight.constant = 10
+                lblEnterValidAuth.text = ""
                 lblEnterValidePassword.text = password.0
             } else if email.1 == true && password.1 == true{
-                lblEnterValidPasswordHeight.constant = 0
-                lblEnterValidEmailHeight.constant = 0
                 lblEnterValidAuth.text = ""
                 lblEnterValidePassword.text = ""
                 delegate?.sendPinBtnAction(email: tfEmail.text ?? "", password: tfPassword.text ?? "")

@@ -127,7 +127,7 @@ public class Email_Address: UIView{
         
         //MARK: Configuration for Enter Valid Email
         setThemsForFontLabel(FontClass: TAFontIcon.self, Font: "Poppins-Regular")
-        lblEnterEmailValid.TAText = "Please enter valid Email"
+        lblEnterEmailValid.TAText = ""
         lblEnterEmailValid.TATextColor = TAColor.validAuthColor
         lblEnterEmailValid.TATextAlignment = .left
         lblEnterEmailValid.TATextFont = TAFontIcon.TAFontRegularErrMsg
@@ -182,10 +182,9 @@ public class Email_Address: UIView{
         let email = ValidationClass.shared.isEmailValid(email: emailValid)
         
         if email.1 == false{
-            lblEnterValidEmailHeight.constant = 10
             lblEnterValideEmail.text = email.0
         }else {
-            lblEnterValidEmailHeight.constant = 0
+            lblEnterValideEmail.text = ""
             delegate?.sendPINBtnAction(email: tfEmail.text ?? "")
         }
     }

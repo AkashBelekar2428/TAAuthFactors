@@ -11,7 +11,7 @@ import Foundation
 public class TAColor{
     
     //MARK: Variables
-    public static let buttonBackgroundColor = UIColor(red: 69/255, green: 70/255, blue: 77/255, alpha: 1)
+    public static let buttonBackgroundColor = UIColor(red: 69/255, green: 70/255, blue: 77/255, alpha: 1) //#4546D
     public static let validAuthColor = UIColor(red: 220/255, green: 53/255, blue: 69/255, alpha: 1)
     public static let forgotButtonTitleColor = UIColor(red: 26/255, green: 13/355, blue: 171/255, alpha: 1)
     public static let textLblColor = UIColor(red: 19/255, green: 19/255, blue: 21/255, alpha: 1)

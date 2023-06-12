@@ -27,21 +27,21 @@ public let msg_blank_emailAddress = "Email Address cannot be blank"
 public let msg_invalid_emailAddress_Password = "Invalid Email Address / Password"
 
 //MARK: Mobile Number
-public let msg_blank_mobileNumber = "Please enter Mobile Number."
-public let msg_less_10digit = "Please enter valid 10 digit Mobile Number."
+public let msg_blank_mobileNumber = "Please enter Mobile Number"
+public let msg_less_10digit = "Please enter valid 10 digit Mobile Number"
 
 //MARK: 6 digit PIN
-public let msg_blank_6digit_PIN = "Please enter the 6 digit PIN."
-public let msg_invalid_PIN = "Please enter valid PIN."
+public let msg_blank_6digit_PIN = "Please enter the 6 digit PIN"
+public let msg_invalid_PIN = "Please enter valid PIN"
 
 //MARK: Resend PIN
 public let msg_resend_PIN = "We sent you a Text Message with 6 digit PIN"
 public let msg_resend_previous_PIN = "Please enter valid PIN"
 public let msg_resend_6digit_PIN = "We sent you an email with 6 digit PIN"
-public let msg_previous_6digit_PIN = "Please enter valide PIN."
+public let msg_previous_6digit_PIN = "Please enter valide PIN"
 
 //MARK: Email
-public let msg_invalid_email = "Please enter valid Email."
+public let msg_invalid_email = "Please enter valid Email"
 
 //MARK: Attempts More
 public let msg_attempts_wrong_Password = "Your Account is locked. Unlock it by raising a support request."
